@@ -4,16 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Profile Photo -->
-    <h1> Sushant Mangore</h1>
 
-    <hr />
-    <h2> Profile Picture </h2>
-    <img src="./Images-and-photos/WhatsApp Image 2024-06-18 at 5.00.46 PM.jpeg" height="100" alt="Profile Picture" />
+    <!-- navigation bar -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contacts</a>
+    </nav>
+
+
+    <!-- main section -->
+
+    <section class="main-content">
+        <!-- sidebar icons -->
+        <div class="sidebar-container">
+            <div class="sidebar">
+                <a href="https://www.linkedin.com/in/sushant-mangore/"><img src="./logos/linkedin.svg" alt="LinkedIn" width="40"></a>
+                <a href="https://github.com/Sushant-Coder-01"><img src="./logos/github.svg" alt="Github" width="40"></a>
+                <a href="https://mail.google.com/mail"><img src="./logos/gmail.svg" alt="Gmail" width="40"></a>
+                <a href=""><img src="./logos/leetcode.svg" alt="Leetcode" width="40"></a>
+            </div>
+        </div>
+        
+
+        <!-- main content area -->
+         
+         <div class="intro-container">
+            <div class="intro">
+                <h3>Hey, I'm</h3>
+                <h1>Sushant Mangore</h1>
+                <h2>a Software Developer</h2>
+            </div>
+         </div>
+        
+         <!-- button part -->
+         <div class="project-button-container">
+                <div class="project-button">
+                    <button onclick="window.location.href='#projects'">Projects</button>
+                </div>
+            </div>
+
+         <!-- Profile Pic -->
+          <div class="profile-pic">
+            <img src="./Images-and-photos/profile-pic (9).png" alt="Profile Picture">
+          </div>
+        
+        <!-- scroll down button -->
+
+        <div class="scroll-down-container">
+            <button class="scroll-down-btn" onclick="window.location.href='#about'">
+                <div class="scroll-down-sign">
+                    <img src="./logos/scroll-down.svg" alt="scroll-down-botton"  >
+                </div>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- About me session -->
+     <section>
+
+     </section>
     
-    <hr />
 
     <!-- Objective -->
 

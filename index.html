@@ -9,13 +9,17 @@
 <body>
 
     <!-- navigation bar -->
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contacts</a>
-    </nav>
+    <div class="nav-bar">
+        <div class="nav-content">
+            <nav>
+        <a href="./#home">Home</a>
+        <a href="./#about">About</a>
+        <a href="./#projects">Projects</a>
+        <a href="./#contacts">Contacts</a>
+        </nav>
+        </div> 
+    </div>
+    
 
 
     <!-- main section -->
@@ -65,65 +69,108 @@
         </div>
 
     </section>
-
-    <!-- About me session -->
-     <section>
-
-     </section>
     
-
-    <!-- Objective -->
-
-    <h2> Objective </h2>
-
-    <p> 
-        I am a B.Tech graduate in Mechanical Engineering from Vishwakarma Institute of Information Technology, Pune,
-         with hands-on experience in backend as well as in frontend development.
-    </p>
-    <p> 
-        My technical skills are complemented by my adaptability, eagerness to learn, and strong communication abilities. 
-        I am seeking opportunities to leverage my expertise in projects that involve backend development, where I can contribute and grow further.
-    </p> 
-    <p>
-        You can view more about my work on <a href="https://www.linkedin.com/in/sushant-mangore/">LinkedIn</a>  and <a href="https://github.com/Sushant-Coder-01">GitHub</a>.
-    </p>
-
-    <hr />
-
-    <!-- Education -->
-    
-    <h2> Education </h2>
-
-    <ul>
-        <li>
+    <!-- About me section -->
+     
+     <section class="about-me-content">
+        <div class="about-me">
+            <div class="heading"><h2>About Me </h2></div>
+            <div class="div-box-1"> <div class="div-box-2"></div></div>
+            <div class="about-me-para"><p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p></div>
+        </div>
+        <div class="objective">
+            <h2>Get to Know Me!</h2>
             <p>
-                Vishwakarma Institute of Information Technology <br />
-                B.TECH (Mechanical Engineering) <br />
-                CGPA:- 6.98 <br />
-                Pune <br />
-                Duration: 2020-2024<br /> 
+                I’m a <strong>Full Stack Developer</strong> with a strong foundation in both frontend and backend development. I enjoy creating user-friendly websites and web applications that provide smooth and engaging experiences.
             </p>
-        </li>
-    </ul>
+            <p>
+                As a recent graduate, I’m excited to keep learning and growing in the field. I like to share what I know about web development and am always exploring new technologies. You can see some of my projects in the <strong>Projects</strong> section, and I’d be happy to connect with you on <strong><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></strong> and <strong><a href="https://github.com/Sushant-Coder-01" target="_blank" rel="noopener noreferrer">Github</a></strong> for more updates.
+            </p>
+            <p>
+                I’m looking for <strong>job</strong> opportunities where I can use my skills, keep learning, and work with a great team. If you have a job that matches my skills and experience, please feel free to <strong>contact</strong> me.
+            </p>
+        </div>
+        <div class="contact-button">
+            <button>Contact</button>
+        </div>
+        
+        <div class="skills">
+            <h2> My Skills </h2>
 
-    <hr />
+            <div class="skill-set">
+                <div class="skills__skill">C</div>
+                <div class="skills__skill">C++</div>
+                <div class="skills__skill">Data Structure</div>
+                <div class="skills__skill">Algorithms</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">Responsive Design</div>
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">GitHub</div>
+                <div class="skills__skill">Node.js</div>
+                <div class="skills__skill">MongoDB</div>
+            </div>
+                
+        </div>
+        <div class="achievements">
+            <h2> Achievements </h2> 
+            <div class="achievement-item gfg">
+                <img src="./logos/gfg.svg" alt="GeekforGeeks icon" height="30"> 
+                <div class="achievement-details">
+                    <p>GeeksforGeeks</p>
+                    <div class="achievement-info">
+                        <span>Rank: 1600+ <img src="./logos/rank-icon.png" alt="Rank icon" height="40"></span>
+                        <span>3-Stars <img src="./logos/star-icon.png" alt="Star icon" height="16"></span>
+                        <a href="https://www.geeksforgeeks.org/" target="_blank">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="achievement-item leetcode">
+                <img src="./logos/colorful-leetcode-icon.svg" alt="LeetCode icon" height="30">
+                <div class="achievement-details">
+                    <p>LeetCode</p>
+                    <div class="achievement-info">
+                        <span>Rank: 1400+ <img src="./logos/rank-icon.png" alt="Rank icon" height="16"></span>
+                        <a href="https://leetcode.com/" target="_blank">View Profile</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
 
-    <!-- Skills -->
+        <div class="education">
+            <h2>Education</h2>
+            <ul>
+                <li class="education-item">
+                    <h3>Vishwakarma Institute of Information Technology</h3>
+                    <div class="education-details">
+                        <div class="left-details">
+                            <p>B.TECH (Mechanical Engineering)</p>
+                        </div>
+                        <div class="right-details">
+                            <p><strong>Duration:</strong> 2020-2024</p>
+                            <p><strong>Location:</strong>Pune</p>
+                        </div>
+                    </div>
+                    <div class="cgpa">
+                        <p><strong>CGPA:</strong> 6.98</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+     
+     </section>
+
     
-    <h2> Skills </h2>
+    <!-- Project section -->
 
-    <ul>
-        <li> Programming Languages: C | C++ | Python </li>
-        <li> Frontend Technologies: HTML | CSS | JavaScript </li>
-        <li> Version Control System : Git & Github </li>
-        <li> Miscellaneous: OOPs Concepts | Data Structure & Algorithms</li>
-    </ul>
-
-    <hr />
-
-    <!-- Projects -->
+    <div>
+        <h2> Projects </h2>
+        
+    </div>
     
-    <h2> Projects </h2>
+    
 
     <ul>
         <li>
@@ -160,30 +207,14 @@
     </ul>
 
     <hr />
-
-    <!-- Achivements -->
     
-    <h2> Achivements </h2>
-
-    <ul>
-        <li>
-            <h3> <a href="https://www.codingninjas.com/studio/profile/a868e9de-2ea1-4dc2-85f4-cbf500445764"> Code Studio </a></h3>
-            <ul>
-                <li>Level-6 (Specialist)</li>
-                <li>Grant-Master League (Present)</li>
-                <li>Badges in DSA Concepts( Sorting, Array, Stack & Queue )</li>
-            </ul>
-        </li>
-    </ul>
+    
 
     <!-- Others -->
 
-    <h2> Others </h2>
+    <h2> Contacts </h2>
     
     <ul>
-        <li> 
-            <a href="./public/hobbies.html">Hobbies</a> 
-        </li>
         <li> 
             <a href="./public/contactDetail.html">Contact Details</a> 
         </li>
@@ -197,5 +228,6 @@
         &copy Sushant's All rights are reserved 
     </footer>
 
+    <script src="./index.js"></script>
 </body>
 </html>

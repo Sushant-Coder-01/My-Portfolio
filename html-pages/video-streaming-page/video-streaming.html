@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming Platform</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../index-css-files/navigation-bar.css">
+    <link rel="stylesheet" href="../../index-css-files/footer-section.css">
+</head>
+
+<body>
+
+     <!-- Navigation Bar -->
+     <header class="nav-bar">
+        <nav>
+            <div class="nav-content">
+                <a href="../../index.html">Home</a>
+                <a href="#about">About Project</a>
+                <a href="#features">Features</a>
+                <a href="#project-link">Project Link</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+        <section class="intro">
+            <div class="container">
+                <h1>Video Streaming Platform</h1>
+                <p>Stream, upload, and manage your videos with ease.</p>
+            </div>
+        </section>
+    
+        <section id="about" class="project-details">
+            <div class="container">
+                <h2>About the Project</h2>
+                <p>The Video Streaming Platform provides users with an intuitive interface to upload, stream, and manage their videos. It includes features like user authentication, video recommendations, and a responsive design.</p>
+            </div>
+        </section>
+    
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>User Authentication:</strong> Designed and implemented secure user registration, login, and logout functionalities using JWT. Ensured robust error handling and token management with a 99.9% uptime.</li>
+                    <li><strong>File Handling:</strong> Integrated Multer for handling file uploads, including avatars and cover images. Utilized Cloudinary for file storage, ensuring high availability and performance.</li>
+                    <li><strong>User Profile Management:</strong> Enabled users to update account details, change passwords, and manage avatars and cover images. Provided detailed user channel profiles, including subscription counts and watch history.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="challenges-solutions">
+            <div class="container">
+                <h2>Challenges and Solutions</h2>
+                <ul>
+                    <li><strong>Challenge:</strong> Handling large volumes of file uploads and ensuring high availability. <strong>Solution:</strong> Utilized Cloudinary for scalable file storage and optimized file handling with Multer.</li>
+                    <li><strong>Challenge:</strong> Managing user authentication and token generation securely. <strong>Solution:</strong> Implemented JWT for secure token management and developed custom error handling utilities.</li>
+                    <li><strong>Challenge:</strong> Optimizing database performance for user profiles and watch history. <strong>Solution:</strong> Optimized MongoDB queries and implemented aggregation pipelines for efficient data retrieval.</li>
+                    <li><strong>Challenge:</strong> Ensuring system resilience and handling errors effectively. <strong>Solution:</strong> Developed robust error handling and retry mechanisms to improve system reliability by 20%.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="image-tech-section">
+            <div class="container">
+                <div class="tech-wrapper">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-list">
+                        <div class="tech">Git</div>
+                        <div class="tech">GitHub</div>
+                        <div class="tech">Node.js</div>
+                        <div class="tech">Express.js</div>
+                        <div class="tech">MongoDB</div>
+                        <div class="tech">Multer</div>
+                        <div class="tech">Postman</div>
+                        <div class="tech">Cloudinary</div>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../../public/Images-and-photos/video-streaming-pic.avif" alt="Screenshot of the Video Streaming Platform interface" class="project-image">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+
+    <section id="project-link" class="github-link">
+            <div class="container">
+                <a href="https://github.com/Sushant-Coder-01/Video-Streaming-Platform-Project" class="github-btn">View Project on GitHub</a>
+            </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Sushant Mangore</h2>
+                <p>
+                    A <strong>Full Stack Developer</strong> with expertise in both frontend and backend development, crafting user-friendly websites and web applications that contribute to the success of the overall product.
+                </p>
+            </div>
+    
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="../../public/logos/linkedin.svg" alt="LinkedIn logo"></a>
+                    <a href="#"><img src="../../public/logos/github.svg" alt="Github logo"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024. Made by <a href="https://sushant-coder-01.github.io/My-Portfolio/">Sushant Mangore</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../../js-files/dark-light-mode.js"></script>
+</body>
+
+</html>

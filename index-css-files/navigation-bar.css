@@ -1,0 +1,81 @@
+/* Basic styling for the navigation bar */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling for navigation links */
+.nav-content a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-content a:hover {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+/* Styling for the theme toggle button */
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    background-color: #444444;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #666666;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme .nav-bar {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme .nav-content a {
+    color: #e0e0e0;
+}
+
+body.dark-theme .nav-content a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-theme .theme-toggle {
+    background-color: #ffffff;
+    color: #444444;
+}
+
+body.dark-theme .theme-toggle:hover {
+    background-color: #e0e0e0;
+}

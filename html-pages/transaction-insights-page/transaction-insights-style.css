@@ -1,0 +1,253 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 5%;
+    margin-top: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Intro Section */
+
+.intro {
+    padding: 50px 0 50px;
+    background-color: #eddcc7;
+    color: rgb(75, 75, 75);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.intro h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.underline-container{
+    display: grid;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline {
+    height: 5px;
+    width: 100px;
+    background-color: #f59e6c;
+    border-radius: 5px;
+}
+
+
+/* image section */
+
+
+
+
+
+
+
+
+/* features section */
+
+.features {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Project Details Section */
+.project-details, .technologies-used {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.project-details h2, .technologies-used h2 {
+    font-size: 2.5em; /* Adjusted for better balance */
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.project-details p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Side by Side Layout for Image and Features */
+.image-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h2 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+#about p {
+    max-width: 800px;
+    text-align: center;
+}
+
+.features ul, .challenges-solutions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li, .challenges-solutions li {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0047ab;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.features li:hover, .challenges-solutions li:hover {
+    transform: translateX(5px);
+}
+
+.challenges-solutions li strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.challenges-solutions li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.challenges-solutions ul {
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+/* Technologies Section */
+.tech-wrapper {
+    padding-left: 20px; /* Adjusted for consistent padding */
+}
+
+.tech-wrapper h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech {
+    background-color: #9a9a9a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* GitHub Button */
+.github-link {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.github-btn {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.github-btn:hover {
+    background-color: #555;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .project-details, 
+body.dark-theme .technologies-used, 
+body.dark-theme .image-section {
+    background-color: #1e1e1e; /* Darker background for sections */
+}
+
+body.dark-theme .project-details h2, 
+body.dark-theme .technologies-used h2, 
+body.dark-theme .tech-wrapper h2 {
+    color: #ffffff;
+}
+
+body.dark-theme .tech {
+    background-color: #555555; /* Darker tech background */
+}
+
+body.dark-theme .github-btn {
+    background-color: #444;
+}
+
+body.dark-theme .footer, 
+body.dark-theme .footer-bottom a {
+    background-color: #1e1e1e;
+    color: #bbbbbb;
+}

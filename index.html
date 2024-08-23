@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Porfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index-css-files/navigation-bar.css">
+    <link rel="stylesheet" href="./index-css-files/home-section.css">
+    <link rel="stylesheet" href="./index-css-files/about-section.css">
+    <link rel="stylesheet" href="./index-css-files/contact-section.css">
+    <link rel="stylesheet" href="./index-css-files/project-section.css">
+    <link rel="stylesheet" href="./index-css-files/footer-section.css">
 </head>
 <body>
 
@@ -12,10 +18,10 @@
     <div class="nav-bar">
         <nav>
             <div class="nav-content">
-                <a href="./#home">Home</a>
-                <a href="./#about">About</a>
-                <a href="./#projects">Projects</a>
-                <a href="./#contacts">Contacts</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
             </div>
             <button class="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
         </nav>
@@ -24,54 +30,53 @@
     
 
 
-    <!-- main section -->
+    <!-- home section -->
+<section class="main-content" id="home">
+    <!-- sidebar icons -->
+    <div class="sidebar-container">
+        <div class="sidebar">
+            <a href="https://www.linkedin.com/in/sushant-mangore/"><img src="./public/logos/linkedin.svg" alt="LinkedIn Profile" width="40"></a>
+            <a href="https://github.com/Sushant-Coder-01"><img src="./public/logos/github.svg" alt="GitHub Profile" width="40"></a>
+            <a href="https://mail.google.com/mail"><img src="./public/logos/gmail.svg" alt="Gmail" width="40"></a>
+            <a href=""><img src="./public/logos/leetcode.svg" alt="LeetCode Profile" width="40"></a>
+        </div>
+    </div>
 
-    <section class="main-content">
-        <!-- sidebar icons -->
-        <div class="sidebar-container">
-            <div class="sidebar">
-                <a href="https://www.linkedin.com/in/sushant-mangore/"><img src="./logos/linkedin.svg" alt="LinkedIn Profile" width="40"></a>
-                <a href="https://github.com/Sushant-Coder-01"><img src="./logos/github.svg" alt="GitHub Profile" width="40"></a>
-                <a href="https://mail.google.com/mail"><img src="./logos/gmail.svg" alt="Gmail" width="40"></a>
-                <a href=""><img src="./logos/leetcode.svg" alt="LeetCode Profile" width="40"></a>
+    <!-- main content area -->
+    <div class="intro-container">
+        <div class="intro">
+            <h3>Hey, I'm</h3>
+            <h1>Sushant Mangore</h1>
+            <h2>a Software Developer</h2>
+        </div>
+    </div>
+
+    <!-- button part -->
+    <div class="project-button-container">
+        <div class="project-button">
+            <button onclick="window.location.href='#projects'">Projects</button>
+        </div>
+    </div>
+
+    <!-- Profile Pic -->
+    <div class="profile-pic">
+        <img src="./public/Images-and-photos/profile-pic (9).png" alt="Sushant Mangore's Profile Picture">
+    </div>
+
+    <!-- scroll down button -->
+    <div class="scroll-down-container">
+        <button class="scroll-down-btn" onclick="window.location.href='#about'">
+            <div class="scroll-down-sign">
+                <img src="./public/logos/scroll-down.svg" alt="Scroll Down Button">
             </div>
-        </div>
-    
-        <!-- main content area -->
-        <div class="intro-container">
-            <div class="intro">
-                <h3>Hey, I'm</h3>
-                <h1>Sushant Mangore</h1>
-                <h2>a Software Developer</h2>
-            </div>
-        </div>
-    
-        <!-- button part -->
-        <div class="project-button-container">
-            <div class="project-button">
-                <button onclick="window.location.href='#projects'">Projects</button>
-            </div>
-        </div>
-    
-        <!-- Profile Pic -->
-        <div class="profile-pic">
-            <img src="./Images-and-photos/profile-pic (9).png" alt="Sushant Mangore's Profile Picture">
-        </div>
-    
-        <!-- scroll down button -->
-        <div class="scroll-down-container">
-            <button class="scroll-down-btn" onclick="window.location.href='#about'">
-                <div class="scroll-down-sign">
-                    <img src="./logos/scroll-down.svg" alt="Scroll Down Button">
-                </div>
-            </button>
-        </div>
-    </section>
+        </button>
+    </div>
+</section>
     
     
     <!-- About me section -->
      
-     <section class="about-me-content">
+     <section class="about-me-content" id="about">
         <div class="about-me">
             <div class="heading"><h2>About Me </h2></div>
             <div class="div-box-1"> <div class="div-box-2"></div></div>
@@ -90,7 +95,7 @@
             </p>
         </div>
         <div class="contact-button">
-            <button>Contact</button>
+            <button onclick="window.location.href='#contacts'" >Contact</button>
         </div>
         
         <div class="skills">
@@ -115,22 +120,22 @@
         <div class="achievements">
             <h2> Achievements </h2> 
             <div class="achievement-item gfg">
-                <img src="./logos/gfg.svg" alt="GeekforGeeks icon" height="30"> 
+                <img src="./public/logos/gfg.svg" alt="GeekforGeeks icon" height="30"> 
                 <div class="achievement-details">
                     <p>GeeksforGeeks</p>
                     <div class="achievement-info">
-                        <span>Rank: 1600+ <img src="./logos/rank-icon.png" alt="Rank icon" height="40"></span>
-                        <span>3-Stars <img src="./logos/star-icon.png" alt="Star icon" height="16"></span>
+                        <span>Rank: 1600+ <img src="./public/logos/rank-icon.png" alt="Rank icon" height="40"></span>
+                        <span>3-Stars <img src="./public/logos/star-icon.png" alt="Star icon" height="16"></span>
                         <a href="https://www.geeksforgeeks.org/" target="_blank">View Profile</a>
                     </div>
                 </div>
             </div>
             <div class="achievement-item leetcode">
-                <img src="./logos/colorful-leetcode-icon.svg" alt="LeetCode icon" height="30">
+                <img src="./public/logos/colorful-leetcode-icon.svg" alt="LeetCode icon" height="30">
                 <div class="achievement-details">
                     <p>LeetCode</p>
                     <div class="achievement-info">
-                        <span>Rank: 1400+ <img src="./logos/rank-icon.png" alt="Rank icon" height="16"></span>
+                        <span>Rank: 1400+ <img src="./public/logos/rank-icon.png" alt="Rank icon" height="16"></span>
                         <a href="https://leetcode.com/" target="_blank">View Profile</a>
                     </div>
                 </div>
@@ -164,7 +169,7 @@
     
     <!-- Project section -->
 
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <div class="projects-header">
             <h1 class="projects-title">Projects</h1>
             <div class="underline-container">
@@ -179,27 +184,27 @@
     
         <div class="project-item video-streaming-project">
             <h2 class="project-title">Video Streaming Platform</h2>
-            <img src="./Images-and-photos/video-streaming-platform-image.avif" alt="Video Streaming Platform Image" class="project-image" height="300">
+            <img src="./public/Images-and-photos/video-streaming-platform-image.avif" alt="Video Streaming Platform Image" class="project-image" height="300">
             <p class="project-description">
                 A comprehensive platform for streaming videos with features such as user authentication, video uploads, and playback.
             </p>
-            <a href="video-streaming.html" class="explore-more-button">Explore More</a>
+            <a href="./html-pages/video-streaming-page/video-streaming.html" class="explore-more-button">Explore More</a>
         </div>
     
         <div class="project-item transaction-insights-project">
             <h2 class="project-title">Transaction Insights</h2>
-            <img src="./Images-and-photos/transaction insights.webp" alt="Transaction Insights Image" class="project-image" height="450">
+            <img src="./public/Images-and-photos/transaction insights.webp" alt="Transaction Insights Image" class="project-image" height="450">
             <p class="project-description">
                 An application that provides detailed insights and analytics for transactions, including data visualization and reporting.
             </p>
-            <a href="transaction-insights.html" class="explore-more-button">Explore More</a>
+            <a href="./html-pages/transaction-insights-page/transaction-insghts.html" class="explore-more-button">Explore More</a>
         </div>
     </section>
     
 
     <!-- contact section -->
 
-    <section class="contact-section">
+    <section class="contact-section" id="contacts">
     <div class="contact-header">
         <h1 class="contact-title">Get in Touch</h1>
         <div class="underline-container">
@@ -257,18 +262,18 @@
             <div class="footer-links">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </div>
     
             <div class="footer-social">
                 <h2>Follow Us</h2>
                 <div class="social-icons">
-                    <a href="#"><img src="./logos/linkedin.svg" alt="LinkedIn logo"></a>
-                    <a href="#"><img src="./logos/github.svg" alt="Github logo"></a>
+                    <a href="#"><img src="./public/logos/linkedin.svg" alt="LinkedIn logo"></a>
+                    <a href="#"><img src="./public/logos/github.svg" alt="Github logo"></a>
                 </div>
             </div>
         </div>
@@ -280,6 +285,6 @@
     
 
     <script src="./index.js"></script>
-    <script src="./public/dark-light-mode.js"></script>
+    <script src="./js-files/dark-light-mode.js"></script>
 </body>
 </html>

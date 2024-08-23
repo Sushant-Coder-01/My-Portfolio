@@ -4,6 +4,66 @@ body {
 
 /* navigation bar */
 
+/* Basic styling for the navigation bar */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    background-color: #fafafa;
+    padding: 15px 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for navigation links */
+.nav-content a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.5s;
+}
+
+.nav-content a:hover {
+    color: #555;
+}
+
+/* Styling for the theme toggle button */
+
+
+.theme-toggle {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background-color: #333; /* Dark background for the button */
+    border: 2px solid #ffffff; /* White border for contrast */
+    border-radius: 50%; /* Makes the button circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em; /* Slightly larger font size for better visibility */
+    color: #ffffff; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #555; /* Lighter background on hover */
+    color: #ffffff; /* Ensure text color remains visible */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .nav-bar {
     position: fixed;
     top: 0;
@@ -14,21 +74,58 @@ body {
 nav {
     background-color: #DFD3C3;
     padding: 15px 20px;
-    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
+.nav-content a {
     text-decoration: none;
     color: #333;
     padding: 10px 15px;
     transition: color 0.5s;
 }
 
-nav a:hover {
+.nav-content a:hover {
     color: #555;
 }
 
-/* main content */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #555;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .nav-bar {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme .nav-content a {
+    color: #ffffff;
+}
+
+body.dark-theme .nav-content a:hover {
+    color: #bbbbbb;
+}
+
+body.dark-theme .theme-toggle {
+    color: #ffffff;
+}
+
+
 
 /* Main Content */
 .main-content {
@@ -239,17 +336,15 @@ h3 {
 /* Design about me content */
 
 .about-me-content {
-    background-color: white;
+    background-color: #ffffff;
+    color: #333;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 30px;
-    padding: 20px;
     max-width: 1200px;
+    padding: 50px 5%;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -469,7 +564,7 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    margin-bottom: 20px; /* Add some margin at the bottom for spacing */
+    margin-bottom: 20px;
 }
 
 .education h2 {
@@ -510,7 +605,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px; /* Added gap between left and right details */
+    gap: 10px;
 }
 
 .left-details p,
@@ -856,3 +951,116 @@ h3 {
         margin: 10px 0;
     }
 }
+
+
+/* footer section */
+
+.footer {
+    background-color: #3C3D37;
+    color: #ecf0f1;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    border-top: 3px solid #eeb84b;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-about, .footer-links, .footer-social {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.footer-about {
+    margin-right: 10%; /* Adds space between footer-about and footer-links */
+}
+
+.footer-links {
+    padding-left: 30px;
+}
+
+.footer-about h2, .footer-links h2, .footer-social h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e67e22;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+
+.footer-social .social-icons {
+    display: flex; 
+    gap: 15px; 
+}
+
+.footer-social .social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(209, 233, 246);
+    padding: 5px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e67e22;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #e4b743;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ecf0f1;
+    text-decoration: none;
+
+}
+
+

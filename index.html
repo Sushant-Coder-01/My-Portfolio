@@ -28,47 +28,44 @@
         <!-- sidebar icons -->
         <div class="sidebar-container">
             <div class="sidebar">
-                <a href="https://www.linkedin.com/in/sushant-mangore/"><img src="./logos/linkedin.svg" alt="LinkedIn" width="40"></a>
-                <a href="https://github.com/Sushant-Coder-01"><img src="./logos/github.svg" alt="Github" width="40"></a>
+                <a href="https://www.linkedin.com/in/sushant-mangore/"><img src="./logos/linkedin.svg" alt="LinkedIn Profile" width="40"></a>
+                <a href="https://github.com/Sushant-Coder-01"><img src="./logos/github.svg" alt="GitHub Profile" width="40"></a>
                 <a href="https://mail.google.com/mail"><img src="./logos/gmail.svg" alt="Gmail" width="40"></a>
-                <a href=""><img src="./logos/leetcode.svg" alt="Leetcode" width="40"></a>
+                <a href=""><img src="./logos/leetcode.svg" alt="LeetCode Profile" width="40"></a>
             </div>
         </div>
-        
-
+    
         <!-- main content area -->
-         
-         <div class="intro-container">
+        <div class="intro-container">
             <div class="intro">
                 <h3>Hey, I'm</h3>
                 <h1>Sushant Mangore</h1>
                 <h2>a Software Developer</h2>
             </div>
-         </div>
-        
-         <!-- button part -->
-         <div class="project-button-container">
-                <div class="project-button">
-                    <button onclick="window.location.href='#projects'">Projects</button>
-                </div>
+        </div>
+    
+        <!-- button part -->
+        <div class="project-button-container">
+            <div class="project-button">
+                <button onclick="window.location.href='#projects'">Projects</button>
             </div>
-
-         <!-- Profile Pic -->
-          <div class="profile-pic">
-            <img src="./Images-and-photos/profile-pic (9).png" alt="Profile Picture">
-          </div>
-        
+        </div>
+    
+        <!-- Profile Pic -->
+        <div class="profile-pic">
+            <img src="./Images-and-photos/profile-pic (9).png" alt="Sushant Mangore's Profile Picture">
+        </div>
+    
         <!-- scroll down button -->
-
         <div class="scroll-down-container">
             <button class="scroll-down-btn" onclick="window.location.href='#about'">
                 <div class="scroll-down-sign">
-                    <img src="./logos/scroll-down.svg" alt="scroll-down-botton"  >
+                    <img src="./logos/scroll-down.svg" alt="Scroll Down Button">
                 </div>
             </button>
         </div>
-
     </section>
+    
     
     <!-- About me section -->
      
@@ -165,60 +162,79 @@
     
     <!-- Project section -->
 
-    <div>
-        <h2> Projects </h2>
-        
-    </div>
+    <section class="projects-section">
+        <div class="projects-header">
+            <h1 class="projects-title">Projects</h1>
+            <div class="underline-container">
+                <div class="underline"></div>
+            </div>
+            <div class="overview-div">
+                <p class="projects-overview">
+                Explore my personal projects below! Click on the "Explore More" button for detailed information about each project.
+                </p>
+            </div>
+        </div>
+    
+        <div class="project-item video-streaming-project">
+            <h2 class="project-title">Video Streaming Platform</h2>
+            <img src="./Images-and-photos/video-streaming-platform-image.avif" alt="Video Streaming Platform Image" class="project-image" height="300">
+            <p class="project-description">
+                A comprehensive platform for streaming videos with features such as user authentication, video uploads, and playback.
+            </p>
+            <a href="video-streaming.html" class="explore-more-button">Explore More</a>
+        </div>
+    
+        <div class="project-item transaction-insights-project">
+            <h2 class="project-title">Transaction Insights</h2>
+            <img src="./Images-and-photos/transaction insights.webp" alt="Transaction Insights Image" class="project-image" height="450">
+            <p class="project-description">
+                An application that provides detailed insights and analytics for transactions, including data visualization and reporting.
+            </p>
+            <a href="transaction-insights.html" class="explore-more-button">Explore More</a>
+        </div>
+    </section>
+    
+
+    <!-- contact section -->
+
+    <section class="contact-section">
+        <div class="contact-header">
+            <h1 class="contact-title">Get in Touch</h1>
+            <div class="underline-container">
+                <div class="underline"></div>
+            </div>
+            <div class="contact-div">
+                <p class="contact-overview">
+                    Drop me an email / Submit the form  
+                </p>
+            </div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Email Us</h3>
+                <p><i class="email-icon">&#9993;</i> sushantmangore45@gmail.com</p>
+            </div>
+            <div class="divider"></div>
+            <div class="contact-form">
+                <h3>Feel free to drop us a line below!</h3>
+                <form>
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Your email" required>
+                    <textarea placeholder="Type your message here..." required></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    
     
     
 
-    <ul>
-        <li>
-            <h3> Video Streaming Platform </h3> 
-             <ul>
-                <li>
-                    Description: Developing a comprehensive backend for a video streaming
-                    platform.
-                </li>
-                <li>
-                    Learnings: 
-                     <ul>
-                        <li>User Authentication: Designed and implemented user registration, login,
-                            and logout functionalities</li>
-                        <li>Database Management: Created and connected database
-                            schemas/models with MongoDB and Mongoose.</li>
-                        <li>Middleware Development: Created authentication and Multer
-                            middleware for handling authentication and file uploads.</li>
-                        <li>File Upload Handling: Utilized Multer for managing file uploads</li>
-                        <li>API Development: Built and tested RESTful APIs using Postman
-                            collections.</li>
-                        <li>Error Handling: Developed custom API error handling and response
-                            utilities.</li>
-                        <li>Aggregation Pipelines: Implemented aggregation pipelines and
-                            subpipelines for efficient data retrieval in watch history and channel
-                            profiles.</li>
-                     </ul>
-                </li>
-                <li>
-                    Technologies Used: Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt, Multer, Postman, Git, Cloudinary.
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-    <hr />
     
     
-
-    <!-- Others -->
-
-    <h2> Contacts </h2>
-    
-    <ul>
-        <li> 
-            <a href="./public/contactDetail.html">Contact Details</a> 
-        </li>
-    </ul>
+   
 
     <hr />
 

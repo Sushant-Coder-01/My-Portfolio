@@ -8,7 +8,7 @@
     width: 100%;
     margin: 50px auto;
     padding: 50px 50px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
 }
 
 /* Sidebar Icons */
@@ -198,6 +198,11 @@ h3 {
     .main-content {
         grid-template-columns: 1fr 9fr 5fr;
         grid-template-rows: 1fr 10fr 6fr;
+        height: 90vh;
+        width: 100%;
+        margin: 50px auto;
+        padding: 50px 0;
+        
     }
 
     h1 {
@@ -218,12 +223,13 @@ h3 {
     }
 
     .project-button-container {
-        margin-right: 4rem;
+        margin-right: 6 rem;
     }
 
     .scroll-down-sign img {
         height: 28px;
         width: 28px;
+        margin-left: 4em;
     }
 }
 
@@ -232,7 +238,11 @@ h3 {
         display: grid;
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr;
-        margin-top: 20px;
+        height: 100vh;
+        width: 100%;
+        margin: 50px auto;
+        padding: 50px 50px;
+        padding-bottom: 2em;
     }
 
     .profile-pic {
@@ -272,7 +282,7 @@ h3 {
         grid-column: 1;
         justify-content: center;
         align-items: center;
-        margin-left: 70px;
+        margin-left: 6em;
     }
 
     .scroll-down-container {
@@ -290,7 +300,8 @@ h3 {
     .scroll-down-sign img {
         height: 25px;
         width: 25px;
-        margin: 50px;
+        margin-top: 80em;
+        margin-left: 50em;
     }
 
     .sidebar {
@@ -303,8 +314,11 @@ h3 {
     .main-content {
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr;
-        margin-top: 20px;
-      
+        height: 100vh;
+        width: 100%;
+        margin: 50px auto;
+        padding: 50px 50px;
+        padding-bottom: 3em;
     }
 
     .profile-pic {

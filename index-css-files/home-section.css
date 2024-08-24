@@ -1,14 +1,13 @@
 /* Main Content */
 .main-content {
-    background-color: #F9F5F6;
     display: grid;
-    grid-template-columns: 1fr 10fr 6fr;
-    grid-template-rows: 1fr 10fr 6fr;
-    height: 100vh;
+    margin: 2rem 0;
+    padding: 3rem 0;
+    height: auto; 
     width: 100%;
-    margin: 50px auto;
-    padding: 50px 50px;
-    padding-bottom: 90px;
+    border-radius: 0; 
+    min-height: 100vh;
+    background-color: #F9F5F6;
 }
 
 /* Sidebar Icons */
@@ -25,7 +24,7 @@
     padding: 15px;
     border-radius: 12px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -166,6 +165,19 @@ h3 {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
+
+    .main-content {
+        background-color: #F9F5F6;
+        display: grid;
+        grid-template-columns: 1fr 10fr 6fr;
+        grid-template-rows: 1fr 10fr 6fr;
+        height: 80vh;
+        width: 100%;
+        margin: 50px auto;
+        padding: 50px 0;
+        padding-bottom: 90px;
+    }
+
     h1 {
         font-size: 3.5em;
     }
@@ -197,29 +209,34 @@ h3 {
 @media (max-width: 992px) {
     .main-content {
         grid-template-columns: 1fr 9fr 5fr;
-        grid-template-rows: 1fr 10fr 6fr;
+        grid-template-rows: 8fr 20fr 6fr;
         height: 90vh;
         width: 100%;
         margin: 50px auto;
-        padding: 50px 0;
-        
+        padding: 50px 0;    
+    }
+    .intro-container {
+        margin-top: 1em;
     }
 
     h1 {
         font-size: 3em;
+        margin-bottom: 0.2em;
     }
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     h3 {
-        font-size: 1.8em;
+        font-size: 1em;
+        margin-bottom: 0.2em;
+        margin-top: 2em;
     }
 
     .profile-pic img {
-        width: 220px;
-        height: 220px;
+        width: 12em;
+        height: 12em;
     }
 
     .project-button-container {
@@ -229,8 +246,41 @@ h3 {
     .scroll-down-sign img {
         height: 28px;
         width: 28px;
-        margin-left: 4em;
     }
+
+    .sidebar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-row: 1 / 3;
+    }
+    
+    .sidebar {
+        background-color: #CAB8A2;
+        padding: 0.5em;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+    
+    .sidebar img {
+        background-color: rgb(209, 233, 246);
+        padding: 0.5em;
+        border-radius: 10%;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    }
+    
+    .sidebar img:hover {
+        transform: scale(1.15);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        background-color: #E0A458;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -312,64 +362,108 @@ h3 {
 @media (max-width: 576px) {
 
     .main-content {
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr;
-        height: 100vh;
+        display: grid;
+        grid-template-rows: auto auto auto 1fr;
         width: 100%;
-        margin: 50px auto;
-        padding: 50px 50px;
-        padding-bottom: 3em;
+        height: 100vh;
+        margin: 0;
+        margin-top: 60px;
+        border-radius: 0; 
+        padding: 0;
+    }
+
+    /* Sidebar as a top navigation bar */
+    .sidebar-container {
+        grid-row: 1;
+        display: flex;
+        width: 50%;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        background-color: #CAB8A2;
+        border-radius: 5px; /* Rounded corners on bottom */
+        justify-content: center;
+        align-items: center; /* Center items vertically */
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    .sidebar img {
+        background-color: rgb(209, 233, 246);
+        width: 2em;
+        padding: 0.3em;
+        border-radius: 10%;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    }
+
+    .sidebar img:hover {
+        transform: scale(1.15);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        background-color: #E0A458;
     }
 
     .profile-pic {
-        grid-row: 1;
-        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
     }
+    
     .profile-pic img {
-        width: 200px;
-        height: 200px;
+        width: 12em;
+        height: 12em;
+        object-fit: cover;
     }
 
     .intro-container {
-        grid-row: 2;
-        grid-column: 1;
-        padding: 20px;
+        grid-row: 3;
+        padding: 2em;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
         justify-content: start;
         align-items: center;
     }
 
     h1 {
-        font-size: 3em;
-        margin-bottom: 20px;
+        font-size: 2.5em;
+        margin-bottom: 0.3em;
     }
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2em;
         margin-top: 0;
     }
 
     h3 {
-        font-size: 1.8em;
-        margin-bottom: 10px;
+        font-size: 1em;
+        margin-bottom: 0.3em;
     }
 
     .project-button-container {
-        grid-row: 3;
-        grid-column: 1;
+        grid-row: 4;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .project-button button {
-        padding: 20px 60px;
+    .project-button button {    
+        padding: 0.5em 1em;
         font-size: 1.5em;
     }
 
     .scroll-down-sign img, .scroll-down-sign, .scroll-down-container {
-        display: none;
-    }
-    
-    .sidebar {
-        display: none;
+        display: none; /* Hide elements that are not needed on small screens */
     }
 }
+

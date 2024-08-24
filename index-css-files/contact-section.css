@@ -8,6 +8,7 @@
     grid-template-rows: auto auto auto auto;
     max-width: 1200px;
     height: 100vh;
+    width: 100%;
     padding: 50px 5%;
     margin: 50px auto;
     border-radius: 12px;
@@ -86,7 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
+    width: 100%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -98,7 +99,7 @@
 .contact-form {
     display: grid;
     grid-template-rows: 1fr 10fr;
-    width: 500px;
+    width: 100%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -191,7 +192,7 @@
     background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .contact-info, .contact-form {
         margin-bottom: 10px;
     }
@@ -199,5 +200,15 @@
     .divider {
         margin: 10px 0;
     }
+
+    .contact-section {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .contact-content {
+        width: 50%;
+    }
+
 }
 

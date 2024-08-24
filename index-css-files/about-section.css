@@ -9,6 +9,7 @@
     grid-template-rows: auto auto;
     gap: 50px;
     max-width: 1200px;
+    width: 100%;
     padding: 50px 5%;
     margin: 50px auto;
     border-radius: 12px;
@@ -29,7 +30,7 @@
 }
 .about-me p {
     font-family: sans-serif;
-    max-width: 600px;
+    width: 50%;
 }
 
 .about-me h2 {
@@ -58,7 +59,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width:  100%;
     line-height: 1.6;
 }
 
@@ -133,8 +134,8 @@
 }
 
 .skills .skills__skill {
-    height: fit-content;
-    width: fit-content;
+    height: auto;
+    width: auto;
     background-color: #F6F5F2;
     color: #e38b44;
     font-family: sans-serif;
@@ -229,7 +230,7 @@
     padding: 15px; /* Reduced padding */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 300%;
     margin-bottom: 20px;
 }
 
@@ -302,3 +303,40 @@
 
 
 
+@media (max-width: 1300px) {
+
+    .about-me-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills {
+        width: 50%;
+    }
+
+    .skill-set {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achievements {
+
+        width: 50%;
+    }
+    .achievement-info {
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .education {
+        width: 50%;
+    }
+    .education-details {
+        flex-direction: column;
+
+    }
+
+
+
+}

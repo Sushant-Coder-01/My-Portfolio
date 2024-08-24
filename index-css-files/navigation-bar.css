@@ -17,6 +17,12 @@ nav {
 }
 
 /* Styling for navigation links */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-content a {
     text-decoration: none;
     color: #444444;
@@ -31,51 +37,36 @@ nav {
     color: #000000;
 }
 
-/* Styling for the theme toggle button */
-.theme-toggle {
-    width: 40px;
-    height: 40px;
-    background-color: #444444;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    color: #ffffff;
+/* Styling for the toggle icon */
+.nav-toggle {
+    display: none;
+    font-size: 30px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-.theme-toggle:hover {
-    background-color: #666666;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+/* Media queries for responsiveness */
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+    .nav-content {
+        display: none; /* Hide the links by default */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-content a {
+        padding: 10px;
+        margin: 5px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle icon */
+    }
 }
 
-/* Dark theme styles */
-body.dark-theme {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-body.dark-theme .nav-bar {
-    background-color: #1e1e1e;
-}
-
-body.dark-theme .nav-content a {
-    color: #e0e0e0;
-}
-
-body.dark-theme .nav-content a:hover {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-body.dark-theme .theme-toggle {
-    background-color: #ffffff;
-    color: #444444;
-}
-
-body.dark-theme .theme-toggle:hover {
-    background-color: #e0e0e0;
+/* Show navigation links when the toggle is active */
+.nav-content.active {
+    display: flex;
 }

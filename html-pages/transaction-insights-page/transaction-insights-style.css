@@ -17,13 +17,12 @@ body, html {
 }
 
 /* Intro Section */
-
 .intro {
     padding: 50px 0 50px;
-    background-color: #eddcc7;
-    color: rgb(75, 75, 75);
-    text-align: center;
+    background-color: #41a6ff;
     border-radius: 5px;
+    color: rgb(62, 62, 62);
+    text-align: center;
 }
 
 .intro h1 {
@@ -35,63 +34,22 @@ body, html {
     font-size: 1.2em;
 }
 
-.underline-container{
-    display: grid;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.underline {
-    height: 5px;
-    width: 100px;
-    background-color: #f59e6c;
-    border-radius: 5px;
-}
-
-
 /* image section */
-
-
-
-
-
-
-
-
-/* features section */
-
-.features {
-    background-color: #f9f9f9;
-    padding: 10px;
-}
-
-/* Project Details Section */
-.project-details, .technologies-used {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-}
-
-.project-details h2, .technologies-used h2 {
-    font-size: 2.5em; /* Adjusted for better balance */
-    margin-bottom: 20px;
-    color: #444;
-}
-
-.project-details p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-/* Side by Side Layout for Image and Features */
-.image-section {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-}
 
 .image-section {
     display: flex;
     justify-content: center;
+    padding: 50px 20px;
+}
+
+.image-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-wrapper img {
@@ -101,60 +59,73 @@ body, html {
     border-radius: 8px;
     object-fit: cover;
     display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
+/* Project Details Section */
 
-#about .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.project-details h2, .technologies-used h2 {
+    font-size: 2em; /* Adjusted for better balance */
+    margin-bottom: 20px;
+    color: #444;
 }
 
-#about h2 {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+.project-details .container {
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-#about p {
-    max-width: 800px;
-    text-align: center;
+.project-details p {
+    margin-left: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-.features ul, .challenges-solutions ul {
-    list-style: none;
-    padding: 0;
+/* divider */
+
+.divider {
+    height: 3px;
+    width: 100%;
+    background-color: #5d5d5d;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/* feature section */
+
+.features h2 {
+    font-size: 2em; /* Adjusted for better balance */
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.features .container {
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.features ul {
+    list-style-type: disc;
+    padding-left: 20px;
     margin: 0;
 }
 
-.features li, .challenges-solutions li {
-    background-color: #fafafa;
-    padding: 15px;
+.features li {
     margin-bottom: 10px;
-    border-left: 5px solid #0047ab;
-    border-radius: 5px;
-    transition: transform 0.2s ease-in-out;
+    padding-left: 10px;
+    line-height: 1.6;
+    color: #555;
 }
 
-.features li:hover, .challenges-solutions li:hover {
-    transform: translateX(5px);
-}
-
-.challenges-solutions li strong {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.challenges-solutions li {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.challenges-solutions ul {
-    margin-top: 15px;
+.features li strong {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 /* Responsive Design */
@@ -167,39 +138,142 @@ body, html {
         padding: 10px;
     }
 
-    section {
-        margin: 20px 0;
+    .features ul {
+        padding-left: 15px;
+    }
+}
+
+
+ /* Challenges and Solutions Section */
+
+.challenges-solutions h2 {
+    font-size: 2em; /* Adjusted for better balance */
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.challenges-solutions .container {
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+ .challenges-solutions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.challenges-solutions li {
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.challenges-solutions li:hover {
+    background-color: #dfe6e9;
+}
+
+.challenge {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.solution {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.challenge-desc, .solution-desc {
+    margin: 0;
+    padding-left: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .challenges-solutions li {
         padding: 15px;
     }
 }
 
 
-
-
-
 /* Technologies Section */
-.tech-wrapper {
-    padding-left: 20px; /* Adjusted for consistent padding */
-}
 
-.tech-wrapper h2 {
-    font-size: 2em;
+
+.tech-section h2 {
+    font-size: 2em; /* Adjusted for better balance */
     margin-bottom: 20px;
+    color: #444;
+    margin-left: 10px;
 }
 
-.tech-list {
+.tech-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: start;
+    gap: 30px;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-.tech {
-    background-color: #9a9a9a;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
+.tech-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 12px 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dee2e6;
+    width: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tech-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .tech-wrapper {
+        padding: 0 15px;
+    }
+
+    .tech-card {
+        padding: 15px;
+        width: 120px;
+    }
+}
+
+
 
 /* GitHub Button */
 .github-link {
@@ -208,17 +282,23 @@ body, html {
 }
 
 .github-btn {
-    background-color: #333;
+    background-color: #52aeff;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #41a6ff;
+    width: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .github-btn:hover {
-    background-color: #555;
+    background-color: #41a6ff;
+    transform: translateX(-20px);
+    box-shadow: 0 6px 20px #41a6ff;
 }
+
 
 /* Dark Theme */
 body.dark-theme {
@@ -228,7 +308,7 @@ body.dark-theme {
 
 body.dark-theme .project-details, 
 body.dark-theme .technologies-used, 
-body.dark-theme .image-section {
+body.dark-theme .image-features-section {
     background-color: #1e1e1e; /* Darker background for sections */
 }
 

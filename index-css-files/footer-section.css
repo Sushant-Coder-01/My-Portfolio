@@ -5,7 +5,7 @@
     color: #ecf0f1;
     padding: 20px 0;
     font-family: 'Arial', sans-serif;
-    border-top: 3px solid #eeb84b;
+    border-top: 3px solid #ff8437;
 }
 
 .footer-container {
@@ -98,12 +98,12 @@
 }
 
 .footer-bottom a {
-    color: #e4b743;
+    color: #ff962e;
     transition: color 0.3s;
 }
 
 .footer-bottom a:hover {
-    color: #ecf0f1;
+    color: white;
     text-decoration: none;
 
 }

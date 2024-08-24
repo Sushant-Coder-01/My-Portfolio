@@ -312,7 +312,7 @@ h3 {
         grid-template-columns: 1fr;
         margin-top: 20px;
         height: 100vh;
-        width: 150%;
+        width: 100%;
     }
 
     .profile-pic {

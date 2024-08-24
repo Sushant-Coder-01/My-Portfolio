@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 10fr 6fr;
     grid-template-rows: 1fr 10fr 6fr;
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     margin: 50px auto;
     padding: 50px 0;
@@ -199,64 +199,39 @@ h3 {
         grid-template-rows: 1fr 10fr 6fr;
     }
 
-    .intro-container {
-        padding: 3em 1em;
-        margin-top: 2em;
-        justify-content: start;
-        align-items: center;
-    }
-
     h1 {
         font-size: 3em;
-        margin-bottom: 0.2em;
     }
 
     h2 {
-        font-size: 2em;
-        margin-top: 0.1em;
+        font-size: 2.5em;
     }
 
     h3 {
-        font-size: 1em;
-        margin-bottom: 0.1em;
+        font-size: 1.8em;
     }
 
     .profile-pic img {
-        width: 12em;
-        height: 12em;
-        margin-top: 2em;
+        width: 220px;
+        height: 220px;
     }
 
     .project-button-container {
-        margin-top: 10em;
-        margin-right: 4em;
+        margin-right: 4rem;
     }
 
     .scroll-down-sign img {
-        height: 2em;
-        width: 2em;
-    }
-
-    .project-button-container {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .project-button button {
-        padding: 0.5em 1.5em;
-        margin-top: 5em;
-        font-size: 2em;
-        margin-right: 1.5em;
+        height: 28px;
+        width: 28px;
     }
 }
 
 @media (max-width: 768px) {
     .main-content {
+        display: grid;
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr;
         margin-top: 20px;
-        height: 100vh;
-        width: 100vh;
     }
 
     .profile-pic {
@@ -264,31 +239,31 @@ h3 {
         grid-column: 1;
     }
     .profile-pic img {
-        width: 15em;
-        height: 15em;
+        width: 200px;
+        height: 200px;
     }
 
     .intro-container {
         grid-row: 2;
         grid-column: 1;
-        padding: 3em;
+        padding: 20px;
         justify-content: start;
         align-items: center;
     }
 
     h1 {
-        font-size: 4em;
-        margin-bottom: 0.2em;
+        font-size: 3em;
+        margin-bottom: 20px;
     }
 
     h2 {
-        font-size: 3em;
-        margin-top: 0.1em;
+        font-size: 2em;
+        margin-top: 0;
     }
 
     h3 {
-        font-size: 2em;
-        margin-bottom: 0.1em;
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
 
     .project-button-container {
@@ -296,19 +271,27 @@ h3 {
         grid-column: 1;
         justify-content: center;
         align-items: center;
+        margin-left: 70px;
     }
 
-    .project-button button {
-        padding: 0.5em 1.5em;
-        margin-left: 2em;
-        font-size: 2em;
-
+    .scroll-down-container {
+        grid-row: 4;
+        grid-column: 1;
     }
 
-    .scroll-down-sign img, .scroll-down-sign, .scroll-down-container {
-        display: none;
+    .scroll-down-sign {
+        height: 80px;
+        font-size: 2px;
+        transform: translateX(-50%);
+        animation: bounce 2s infinite;
     }
-    
+
+    .scroll-down-sign img {
+        height: 25px;
+        width: 25px;
+        margin: 50px;
+    }
+
     .sidebar {
         display: none;
     }
@@ -320,8 +303,6 @@ h3 {
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr;
         margin-top: 20px;
-        height: 100vh;
-        width: 100vh;
     }
 
     .profile-pic {
@@ -329,31 +310,31 @@ h3 {
         grid-column: 1;
     }
     .profile-pic img {
-        width: 15em;
-        height: 15em;
+        width: 200px;
+        height: 200px;
     }
 
     .intro-container {
         grid-row: 2;
         grid-column: 1;
-        padding: 3em;
+        padding: 20px;
         justify-content: start;
         align-items: center;
     }
 
     h1 {
-        font-size: 4em;
-        margin-bottom: 0.2em;
+        font-size: 3em;
+        margin-bottom: 20px;
     }
 
     h2 {
-        font-size: 3em;
-        margin-top: 0.1em;
+        font-size: 2.5em;
+        margin-top: 0;
     }
 
     h3 {
-        font-size: 2em;
-        margin-bottom: 0.1em;
+        font-size: 1.8em;
+        margin-bottom: 10px;
     }
 
     .project-button-container {
@@ -361,14 +342,11 @@ h3 {
         grid-column: 1;
         justify-content: center;
         align-items: center;
-
     }
 
     .project-button button {
-        padding: 0.5em 1.5em;
-        margin-left: 2em;
-        font-size: 2em;
-
+        padding: 20px 60px;
+        font-size: 1.5em;
     }
 
     .scroll-down-sign img, .scroll-down-sign, .scroll-down-container {

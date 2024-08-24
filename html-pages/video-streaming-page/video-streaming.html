@@ -19,6 +19,7 @@
                 <a href="../../index.html">Home</a>
                 <a href="#about">About Project</a>
                 <a href="#features">Features</a>
+                <a href="#tackled-challenges">Tackled Challenges</a>
                 <a href="#project-link">Project Link</a>
             </div>
             <button class="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
@@ -33,17 +34,31 @@
                 <p>Stream, upload, and manage your videos with ease.</p>
             </div>
         </section>
-    
-        <section id="about" class="project-details">
+
+        <section class="image-section">
+            <div class="image-wrapper">
+                <img src="../../public/Images-and-photos/video-streaming-pic.avif" alt="Screenshot of the Video Streaming Platform interface" class="project-image">
+            </div>
+        </section>
+
+        <section id="project-link" class="github-link">
             <div class="container">
-                <h2>About the Project</h2>
-                <p>The Video Streaming Platform provides users with an intuitive interface to upload, stream, and manage their videos. It includes features like user authentication, video recommendations, and a responsive design.</p>
+                <a href="https://github.com/Sushant-Coder-01/Video-Streaming-Platform-Project" class="github-btn">View Project on GitHub</a>
             </div>
         </section>
     
-        <section class="features">
+        <section id="about" class="project-details">
+            <h2>About the Project</h2>
             <div class="container">
-                <h2>Features</h2>
+                <p>The Video Streaming Platform provides users with an intuitive interface to upload, stream, and manage their videos. It includes features like user authentication, video recommendations, and a responsive design.</p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+    
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="container">
                 <ul>
                     <li><strong>User Authentication:</strong> Designed and implemented secure user registration, login, and logout functionalities using JWT. Ensured robust error handling and token management with a 99.9% uptime.</li>
                     <li><strong>File Handling:</strong> Integrated Multer for handling file uploads, including avatars and cover images. Utilized Cloudinary for file storage, ensuring high availability and performance.</li>
@@ -51,39 +66,73 @@
                 </ul>
             </div>
         </section>
+
+        <div class="divider"></div>
     
-        <section class="challenges-solutions">
+        <section id="tackled-challenges" class="challenges-solutions">
+            <h2>Tackled Challenges</h2>
             <div class="container">
-                <h2>Challenges and Solutions</h2>
                 <ul>
-                    <li><strong>Challenge:</strong> Handling large volumes of file uploads and ensuring high availability. <strong>Solution:</strong> Utilized Cloudinary for scalable file storage and optimized file handling with Multer.</li>
-                    <li><strong>Challenge:</strong> Managing user authentication and token generation securely. <strong>Solution:</strong> Implemented JWT for secure token management and developed custom error handling utilities.</li>
-                    <li><strong>Challenge:</strong> Optimizing database performance for user profiles and watch history. <strong>Solution:</strong> Optimized MongoDB queries and implemented aggregation pipelines for efficient data retrieval.</li>
-                    <li><strong>Challenge:</strong> Ensuring system resilience and handling errors effectively. <strong>Solution:</strong> Developed robust error handling and retry mechanisms to improve system reliability by 20%.</li>
+                    <li>
+                        <div class="challenge">Challenge:</div>
+                        <p class="challenge-desc">Handling large volumes of file uploads and ensuring high availability.</p>
+                        <div class="solution">Solution:</div>
+                        <p class="solution-desc">Utilized Cloudinary for scalable file storage and optimized file handling with Multer.</p>
+                    </li>
+                    <li>
+                        <div class="challenge">Challenge:</div>
+                        <p class="challenge-desc">Managing user authentication and token generation securely.</p>
+                        <div class="solution">Solution:</div>
+                        <p class="solution-desc">Implemented JWT for secure token management and developed custom error handling utilities.</p>
+                    </li>
+                    <li>
+                        <div class="challenge">Challenge:</div>
+                        <p class="challenge-desc">Optimizing database performance for user profiles and watch history.</p>
+                        <div class="solution">Solution:</div>
+                        <p class="solution-desc">Optimized MongoDB queries and implemented aggregation pipelines for efficient data retrieval.</p>
+                    </li>
+                    <li>
+                        <div class="challenge">Challenge:</div>
+                        <p class="challenge-desc">Ensuring system resilience and handling errors effectively.</p>
+                        <div class="solution">Solution:</div>
+                        <p class="solution-desc">Developed robust error handling and retry mechanisms to improve system reliability by 20%.</p>
+                    </li>
                 </ul>
             </div>
         </section>
+
+        <div class="divider"></div>
     
-        <section class="image-tech-section">
-            <div class="container">
-                <div class="tech-wrapper">
-                    <h2>Technologies Used</h2>
-                    <div class="tech-list">
-                        <div class="tech">Git</div>
-                        <div class="tech">GitHub</div>
-                        <div class="tech">Node.js</div>
-                        <div class="tech">Express.js</div>
-                        <div class="tech">MongoDB</div>
-                        <div class="tech">Multer</div>
-                        <div class="tech">Postman</div>
-                        <div class="tech">Cloudinary</div>
-                    </div>
+        <section class="tech-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-wrapper">
+                <div class="tech-card">
+                    <div class="tech-name">Git</div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="../../public/Images-and-photos/video-streaming-pic.avif" alt="Screenshot of the Video Streaming Platform interface" class="project-image">
+                <div class="tech-card">
+                    <div class="tech-name">GitHub</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-name">Node.js</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-name">Express.js</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-name">MongoDB</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-name">Multer</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-name">Postman</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-name">Cloudinary</div>
                 </div>
             </div>
         </section>
+        
     </div>
     
     

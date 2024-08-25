@@ -316,7 +316,6 @@
         margin: 50px auto;
         border-radius: 12px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        padding-top: 70px;
         gap: 0;
     }
     
@@ -511,7 +510,6 @@
     .about-me-content {
         width: 100%;
         padding: 0;
-       padding-top: 70px;
     }
 }
 
@@ -519,7 +517,6 @@
 
     .about-me-content {
         width: 100%;
-        padding-top: 70px;
         gap: 0;
     }
 

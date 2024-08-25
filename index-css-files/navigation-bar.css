@@ -1,4 +1,12 @@
+/* Adjust this value according to your navbar height */
+:root {
+    --navbar-height: 60px; /* Set your navbar height here */
+}
 
+/* Apply the scroll-margin-top to all your sections */
+section {
+    scroll-margin-top: var(--navbar-height);
+}
 
 /* Basic styling for the navigation bar */
 .nav-bar {

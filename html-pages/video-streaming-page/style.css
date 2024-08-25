@@ -238,7 +238,7 @@ body, html {
 .github-btn:hover {
     background-color: #ff8432;
     transform: translateX(-20px);
-    box-shadow: 0 6px 20px rgba(255, 133, 52, 1);
+    box-shadow: 2px 6px 20px rgba(255, 133, 52, 1);
 }
 
 /* Responsive Media Queries */
@@ -305,6 +305,26 @@ body, html {
 
     .image-wrapper {
         width: 100%;
+    }
+
+    .features .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .challenges-solutions .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .tech-wrapper {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .project-details .container {
+        margin: 10px;
+        padding: 10px;
     }
 
     .tech-card {

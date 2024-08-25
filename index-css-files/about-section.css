@@ -306,13 +306,14 @@
 @media (max-width: 1200px) {
 
     .about-me-content {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr auto ;
         grid-template-rows: 1fr;
         width: 100%;
-        height: auto;
-        margin: 0;
-        border-radius: 0; 
-        padding: 0; 
+        max-width: 900px;
+        padding: 50px 5%;
+        margin: 50px auto;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         padding-top: 100px;
         gap: 0;
     }
@@ -502,4 +503,19 @@
         font-weight: 600;
     }
 
+}
+
+@media (max-width: 768px) {
+
+    .about-me-content {
+        width: 100%;
+        padding-top: 100px;
+        gap: 0;
+    }
+    
+    .about-me p {
+        width: 70%;
+    } 
+
+    
 }

@@ -5,6 +5,8 @@ body, html {
     font-family: 'Arial', sans-serif;
     scroll-behavior: smooth;
     transition: background-color 0.3s, color 0.3s;
+    background-color: #f0f8ff;
+    color: #3e3e3e;
 }
 
 .main {
@@ -14,19 +16,20 @@ body, html {
     margin-top: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    background-color: #ffffff;
 }
 
 /* Intro Section */
 .intro {
     padding: 50px 0;
-    background-color: #41a6ff;
+    background-color: #3572EF;
     border-radius: 5px;
-    color: #3e3e3e;
+    color: white;
     text-align: center;
 }
 
 .intro h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
@@ -45,15 +48,14 @@ body, html {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 300px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-wrapper img {
     width: 100%;
-    max-width: 500px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -65,7 +67,7 @@ body, html {
 .project-details h2, .technologies-used h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #444;
+    color: #3572EF;
 }
 
 .project-details .container {
@@ -73,6 +75,7 @@ body, html {
     margin: 20px;
     padding: 5px;
     border-radius: 5px;
+    background-color: #f8f9fa;
 }
 
 .project-details p {
@@ -85,7 +88,7 @@ body, html {
 .divider {
     height: 3px;
     width: 100%;
-    background-color: #5d5d5d;
+    background-color: #3572EF;
     border-radius: 5px;
     margin-top: 30px;
 }
@@ -94,7 +97,7 @@ body, html {
 .features h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #444;
+    color: #3572EF;
 }
 
 .features .container {
@@ -102,6 +105,7 @@ body, html {
     padding: 50px;
     margin: 20px;
     border-radius: 5px;
+    background-color: #f8f9fa;
 }
 
 .features ul {
@@ -127,7 +131,7 @@ body, html {
 .challenges-solutions h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #444;
+    color: #3572EF;
 }
 
 .challenges-solutions .container {
@@ -135,6 +139,7 @@ body, html {
     padding: 50px;
     margin: 20px;
     border-radius: 5px;
+    background-color: #f8f9fa;
 }
 
 .challenges-solutions ul {
@@ -144,7 +149,7 @@ body, html {
 }
 
 .challenges-solutions li {
-    background-color: #ecf0f1;
+    background-color: #e9ecef;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -153,17 +158,17 @@ body, html {
 }
 
 .challenges-solutions li:hover {
-    background-color: #dfe6e9;
+    background-color: #dee2e6;
 }
 
 .challenge {
-    color: #e74c3c;
+    color: #dc3545;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .solution {
-    color: #27ae60;
+    color: #28a745;
     font-weight: bold;
     margin-top: 15px;
 }
@@ -179,7 +184,7 @@ body, html {
 .tech-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #444;
+    color: #3572EF;
     margin-left: 10px;
 }
 
@@ -193,6 +198,7 @@ body, html {
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
+    background-color: #f8f9fa;
 }
 
 .tech-card {
@@ -224,53 +230,21 @@ body, html {
 }
 
 .github-btn {
-    background-color: #52aeff;
+    background-color: #3572EF;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #41a6ff;
+    border: 1px solid #3572EF;
     width: 100px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .github-btn:hover {
-    background-color: #41a6ff;
+    background-color: #3572EF;
     transform: translateX(-20px);
-    box-shadow: 0 6px 20px #41a6ff;
-}
-
-/* Dark Theme */
-body.dark-theme {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-body.dark-theme .project-details, 
-body.dark-theme .technologies-used, 
-body.dark-theme .image-features-section {
-    background-color: #1e1e1e;
-}
-
-body.dark-theme .project-details h2, 
-body.dark-theme .technologies-used h2, 
-body.dark-theme .tech-wrapper h2 {
-    color: #ffffff;
-}
-
-body.dark-theme .tech {
-    background-color: #555555;
-}
-
-body.dark-theme .github-btn {
-    background-color: #444;
-}
-
-body.dark-theme .footer, 
-body.dark-theme .footer-bottom a {
-    background-color: #1e1e1e;
-    color: #bbbbbb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Design */
@@ -280,7 +254,7 @@ body.dark-theme .footer-bottom a {
     }
 
     .image-wrapper {
-        width: 60%;
+        width: 80%;
     }
 
     .tech-wrapper {
@@ -302,7 +276,7 @@ body.dark-theme .footer-bottom a {
     }
 
     .image-wrapper {
-        width: 80%;
+        width: 100%;
     }
 
     .tech-wrapper {
@@ -323,5 +297,29 @@ body.dark-theme .footer-bottom a {
 
     .challenges-solutions li {
         padding: 15px;
+    }
+}
+
+/* Extra Small Devices (Very Small Mobile Phones, 575px and below) */
+@media (max-width: 575px) {
+    .main {
+        padding: 30px 5%;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .tech-card {
+        width: fit-content;
+    }
+
+    .github-btn {
+        padding: 12px 20px;
+        font-size: 0.9em;
     }
 }

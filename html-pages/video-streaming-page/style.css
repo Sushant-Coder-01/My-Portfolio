@@ -18,7 +18,7 @@ body, html {
 
 /* Intro Section */
 .intro {
-    padding: 50px 0 50px;
+    padding: 50px 0;
     background-color: #ff6600;
     border-radius: 5px;
     color: rgb(62, 62, 62);
@@ -34,8 +34,7 @@ body, html {
     font-size: 1.2em;
 }
 
-/* image section */
-
+/* Image Section */
 .image-section {
     display: flex;
     justify-content: center;
@@ -46,15 +45,15 @@ body, html {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 300px;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 500px;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-wrapper img {
     width: 100%;
-    max-width: 500px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -62,11 +61,9 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Project Details Section */
-
 .project-details h2, .technologies-used h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
 }
@@ -84,8 +81,7 @@ body, html {
     line-height: 1.6;
 }
 
-/* divider */
-
+/* Divider */
 .divider {
     height: 3px;
     width: 100%;
@@ -94,10 +90,9 @@ body, html {
     margin-top: 30px;
 }
 
-/* feature section */
-
+/* Feature Section */
 .features h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
 }
@@ -128,26 +123,9 @@ body, html {
     margin-right: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .features ul {
-        padding-left: 15px;
-    }
-}
-
-
- /* Challenges and Solutions Section */
-
+/* Challenges and Solutions Section */
 .challenges-solutions h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
 }
@@ -159,7 +137,7 @@ body, html {
     border-radius: 5px;
 }
 
- .challenges-solutions ul {
+.challenges-solutions ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -197,27 +175,9 @@ body, html {
     color: #555;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .challenges-solutions li {
-        padding: 15px;
-    }
-}
-
-
 /* Technologies Section */
-
-
 .tech-section h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
     margin-left: 10px;
@@ -229,7 +189,7 @@ body, html {
     justify-content: start;
     gap: 30px;
     max-width: 1000px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -238,7 +198,7 @@ body, html {
 .tech-card {
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 12px 12px;
+    padding: 12px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #dee2e6;
@@ -256,24 +216,6 @@ body, html {
     font-weight: 600;
     color: #495057;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.8em;
-    }
-
-    .tech-wrapper {
-        padding: 0 15px;
-    }
-
-    .tech-card {
-        padding: 15px;
-        width: 120px;
-    }
-}
-
-
 
 /* GitHub Button */
 .github-link {
@@ -299,35 +241,78 @@ body, html {
     box-shadow: 0 6px 20px rgba(255, 133, 52, 1);
 }
 
+/* Responsive Media Queries */
 
-/* Dark Theme */
-body.dark-theme {
-    background-color: #121212;
-    color: #ffffff;
+/* Large Devices (Desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    .main {
+        max-width: 1200px;
+        padding: 50px 10%;
+    }
 }
 
-body.dark-theme .project-details, 
-body.dark-theme .technologies-used, 
-body.dark-theme .image-features-section {
-    background-color: #1e1e1e; /* Darker background for sections */
+/* Medium Devices (Tablets, 768px to 1199px) */
+@media (max-width: 1199px) {
+    .main {
+        padding: 50px 5%;
+    }
+
+    .intro h1 {
+        font-size: 3em;
+    }
+
+    .image-wrapper {
+        width: 60%;
+    }
 }
 
-body.dark-theme .project-details h2, 
-body.dark-theme .technologies-used h2, 
-body.dark-theme .tech-wrapper h2 {
-    color: #ffffff;
+/* Small Devices (Mobile Phones, 576px to 767px) */
+@media (max-width: 767px) {
+    .main {
+        padding: 50px 5%;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .image-wrapper {
+        width: 80%;
+    }
+
+    .tech-card {
+        width: 80px;
+    }
 }
 
-body.dark-theme .tech {
-    background-color: #555555; /* Darker tech background */
-}
+/* Extra Small Devices (Very Small Mobile Phones, 575px and below) */
+@media (max-width: 575px) {
+    .main {
+        padding: 30px 5%;
+    }
 
-body.dark-theme .github-btn {
-    background-color: #444;
-}
+    .intro h1 {
+        font-size: 2em;
+    }
 
-body.dark-theme .footer, 
-body.dark-theme .footer-bottom a {
-    background-color: #1e1e1e;
-    color: #bbbbbb;
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .image-wrapper {
+        width: 100%;
+    }
+
+    .tech-card {
+        width: 70px;
+    }
+
+    .github-btn {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
 }

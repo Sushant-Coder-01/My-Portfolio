@@ -277,7 +277,11 @@ h3 {
     .profile-pic img {
         width: 12em;
         height: 12em;
-        margin: 2em;
+    }
+
+    .profile-pic {
+        justify-content: center;
+        align-items: start;
     }
 
     .project-button-container {
@@ -334,21 +338,23 @@ h3 {
 
     .main-content {
         display: grid;
-        grid-template-rows: auto auto auto auto 1fr;
-        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 1fr;
+        grid-template-columns: 1fr 4fr;
         width: 100%;
         height: 100vh;
         margin: 0;
-        margin-top: 60px;
         border-radius: 0; 
         padding: 0;
+        padding-top: 70px;
     }
 
       /* Sidebar as a top navigation bar */
       .sidebar-container {
         grid-row: 1;
+        grid-column: 1;
         display: flex;
-        width: 40%;
+        flex-direction: column;
+        width: 50%;
         margin-top: 1em;
         margin-left: 0.5em;
         background-color: #CAB8A2;
@@ -359,16 +365,15 @@ h3 {
 
     .sidebar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1em;
-        flex-grow: 1;
     }
 
     .sidebar img {
         background-color: rgb(209, 233, 246);
-        width: 2.5em;
+        width: 2em;
         padding: 0.5em;
         border-radius: 10%;
         transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
@@ -382,17 +387,18 @@ h3 {
 
 
     .profile-pic {
-        grid-row: 2;
-        margin: 0;
-        padding: 0;
+        grid-row: 1;
+        grid-column: 2;
+        margin-right: 150px;
     }
     .profile-pic img {
-        width: 12em;
-        height: 12em;
+        width: 200px;
+        height: 200px;
     }
 
     .intro-container {
-        grid-row: 3;
+        grid-row: 2;
+        grid-column: 1 / 3;
         padding: 20px;
         margin: 0;
         margin-bottom: 20px;
@@ -417,9 +423,8 @@ h3 {
 
     .project-button-container {
         grid-row: 4;
-        grid-column: 1;
-        padding: 0;
-        margin: 0;
+        grid-column: 1 / 3;
+        align-items: start;
     }
 
     .project-button {    
@@ -430,6 +435,7 @@ h3 {
 
     .scroll-down-container {
         grid-row: 5;
+        grid-column: 1 / 2;
     }
 
     .scroll-down-sign {
@@ -453,20 +459,23 @@ h3 {
     .main-content {
         display: grid;
         grid-template-rows: auto auto auto 1fr;
+        grid-template-columns: 1fr 4fr;
         width: 100%;
         height: 100vh;
         margin: 0;
-        margin-top: 60px;
         border-radius: 0; 
         padding: 0;
+        padding-top: 70px;
     }
 
-    /* Sidebar as a top navigation bar */
-    .sidebar-container {
+      /* Sidebar as a top navigation bar */
+      .sidebar-container {
         grid-row: 1;
+        grid-column: 1;
         display: flex;
-        width: 50%;
-        margin-top: 0.5em;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 1em;
         margin-left: 0.5em;
         background-color: #CAB8A2;
         border-radius: 5px; /* Rounded corners on bottom */
@@ -476,17 +485,16 @@ h3 {
 
     .sidebar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        flex-grow: 1;
+        gap: 1em;
     }
 
     .sidebar img {
         background-color: rgb(209, 233, 246);
         width: 2em;
-        padding: 0.3em;
+        padding: 0.5em;
         border-radius: 10%;
         transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     }
@@ -497,35 +505,30 @@ h3 {
         background-color: #E0A458;
     }
 
+
     .profile-pic {
-        grid-row: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        grid-row: 1;
+        grid-column: 2;
+        margin-right: 150px;
     }
-    
     .profile-pic img {
-        width: 12em;
-        height: 12em;
-        object-fit: cover;
+        width: 200px;
+        height: 200px;
     }
 
     .intro-container {
-        grid-row: 3;
-        padding: 2em;
-        padding-top: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        display: flex;
-        flex-direction: column;
+        grid-row: 2;
+        grid-column: 1 / 3;
+        padding: 20px;
+        margin: 0;
+        margin-bottom: 20px;
         justify-content: start;
         align-items: center;
     }
 
     h1 {
-        font-size: 2.5em;
-        margin-bottom: 0.3em;
+        font-size: 3em;
+        margin-bottom: 20px;
     }
 
     h2 {
@@ -534,20 +537,22 @@ h3 {
     }
 
     h3 {
-        font-size: 1em;
-        margin-bottom: 0.3em;
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
 
     .project-button-container {
-        padding: 0;
-        margin: 0;
         grid-row: 4;
+        grid-column: 1 / 3;
+        align-items: start;
     }
 
     .project-button {    
+        margin: 20px;
         padding: 5px 10px;
         font-size: 12px;
     }
+
 
     .scroll-down-sign img, .scroll-down-sign, .scroll-down-container {
         display: none; /* Hide elements that are not needed on small screens */

@@ -284,32 +284,71 @@ h3 {
 }
 
 @media (max-width: 768px) {
+
     .main-content {
         display: grid;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto 1fr;
         grid-template-columns: 1fr;
-        height: 100vh;
         width: 100%;
-        margin: 50px auto;
-        padding: 50px 50px;
-        padding-bottom: 2em;
+        height: 100vh;
+        margin: 0;
+        margin-top: 60px;
+        border-radius: 0; 
+        padding: 0;
+    }
+
+    /* Sidebar as a top navigation bar */
+    .sidebar-container {
+        grid-row: 1;
+        display: flex;
+        width: 40%;
+        margin-top: 1em;
+        margin-left: 0.5em;
+        background-color: #CAB8A2;
+        border-radius: 5px; /* Rounded corners on bottom */
+        justify-content: center;
+        align-items: center; /* Center items vertically */
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    .sidebar img {
+        background-color: rgb(209, 233, 246);
+        width: 2em;
+        padding: 0.6em;
+        border-radius: 10%;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    }
+
+    .sidebar img:hover {
+        transform: scale(1.15);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        background-color: #E0A458;
     }
 
     .profile-pic {
-        grid-row: 1;
-        grid-column: 1;
+        grid-row: 2;
+        padding: 50px;
     }
     .profile-pic img {
-        width: 200px;
-        height: 200px;
+        width: 15em;
+        height: 15em;
     }
 
     .intro-container {
-        grid-row: 2;
-        grid-column: 1;
+        grid-row: 3;
         padding: 20px;
         justify-content: start;
         align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
     h1 {
@@ -328,11 +367,18 @@ h3 {
     }
 
     .project-button-container {
-        grid-row: 3;
+        grid-row: 4;
         grid-column: 1;
         justify-content: center;
         align-items: center;
         margin-left: 6em;
+        padding: 5em;
+        padding-bottom: 0;
+    }
+
+    .project-button button {    
+        padding: 0.5em 1em;
+        font-size: 1.5em;
     }
 
     .scroll-down-container {
@@ -341,6 +387,9 @@ h3 {
     }
 
     .scroll-down-sign {
+        justify-content: center;
+        align-items: center;
+        text-align: start;
         height: 80px;
         font-size: 2px;
         transform: translateX(-50%);
@@ -350,20 +399,17 @@ h3 {
     .scroll-down-sign img {
         height: 25px;
         width: 25px;
-        margin-top: 80em;
-        margin-left: 50em;
+        margin-top: 30em;
+        margin-left: 5em;
     }
 
-    .sidebar {
-        display: none;
-    }
 }
 
 @media (max-width: 576px) {
 
     .main-content {
         display: grid;
-        grid-template-rows: auto auto auto 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         width: 100%;
         height: 100vh;
         margin: 0;
@@ -424,11 +470,6 @@ h3 {
 
     .intro-container {
         grid-row: 3;
-        padding: 2em;
-        padding-top: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
         display: flex;
         flex-direction: column;
         justify-content: start;

@@ -235,12 +235,12 @@
         <div class="contact-form">
             <h3>Feel free to drop us a line below!</h3>
             <form>
-                <div class="form-row">
-                    <input type="text" placeholder="First name" required>
-                    <input type="text" placeholder="Last name" required>
+                <div class="form-row" id="contact-form">
+                    <input type="text" id="firstName" placeholder="First name" required>
+                    <input type="text" id="lastName" placeholder="Last name" required>
                 </div>
-                <input type="email" placeholder="Your email" required>
-                <textarea placeholder="Type your message here..." required></textarea>
+                <input type="email" id="email" placeholder="Your email" required>
+                <textarea id="message" placeholder="Type your message here..." required></textarea>
                 <button type="submit">SEND</button>
             </form>
         </div>
@@ -287,5 +287,6 @@
 
     <script src="./index.js"></script>
     <script src="./index-js-files/nav-bar.js"></script>
+    <script src="./index-js-files/form-data.js"></script>
 </body>
 </html>

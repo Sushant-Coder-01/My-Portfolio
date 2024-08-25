@@ -186,7 +186,7 @@
     
     .projects-overview {
         display: flex;
-        width: 100%;
+        width: 80%;
         font-family: sans-serif;
         font-size: 18px;
         color: #777;

@@ -18,10 +18,10 @@ body, html {
 
 /* Intro Section */
 .intro {
-    padding: 50px 0 50px;
+    padding: 50px 0;
     background-color: #41a6ff;
     border-radius: 5px;
-    color: rgb(62, 62, 62);
+    color: #3e3e3e;
     text-align: center;
 }
 
@@ -34,8 +34,7 @@ body, html {
     font-size: 1.2em;
 }
 
-/* image section */
-
+/* Image Section */
 .image-section {
     display: flex;
     justify-content: center;
@@ -62,11 +61,9 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Project Details Section */
-
 .project-details h2, .technologies-used h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
 }
@@ -84,8 +81,7 @@ body, html {
     line-height: 1.6;
 }
 
-/* divider */
-
+/* Divider */
 .divider {
     height: 3px;
     width: 100%;
@@ -94,10 +90,9 @@ body, html {
     margin-top: 30px;
 }
 
-/* feature section */
-
+/* Feature Section */
 .features h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
 }
@@ -128,26 +123,9 @@ body, html {
     margin-right: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .features ul {
-        padding-left: 15px;
-    }
-}
-
-
- /* Challenges and Solutions Section */
-
+/* Challenges and Solutions Section */
 .challenges-solutions h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
 }
@@ -159,7 +137,7 @@ body, html {
     border-radius: 5px;
 }
 
- .challenges-solutions ul {
+.challenges-solutions ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -197,27 +175,9 @@ body, html {
     color: #555;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .challenges-solutions li {
-        padding: 15px;
-    }
-}
-
-
 /* Technologies Section */
-
-
 .tech-section h2 {
-    font-size: 2em; /* Adjusted for better balance */
+    font-size: 2em;
     margin-bottom: 20px;
     color: #444;
     margin-left: 10px;
@@ -229,7 +189,7 @@ body, html {
     justify-content: start;
     gap: 30px;
     max-width: 1000px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -257,24 +217,6 @@ body, html {
     color: #495057;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.8em;
-    }
-
-    .tech-wrapper {
-        padding: 0 15px;
-    }
-
-    .tech-card {
-        padding: 15px;
-        width: 120px;
-    }
-}
-
-
-
 /* GitHub Button */
 .github-link {
     text-align: center;
@@ -299,7 +241,6 @@ body, html {
     box-shadow: 0 6px 20px #41a6ff;
 }
 
-
 /* Dark Theme */
 body.dark-theme {
     background-color: #121212;
@@ -309,7 +250,7 @@ body.dark-theme {
 body.dark-theme .project-details, 
 body.dark-theme .technologies-used, 
 body.dark-theme .image-features-section {
-    background-color: #1e1e1e; /* Darker background for sections */
+    background-color: #1e1e1e;
 }
 
 body.dark-theme .project-details h2, 
@@ -319,7 +260,7 @@ body.dark-theme .tech-wrapper h2 {
 }
 
 body.dark-theme .tech {
-    background-color: #555555; /* Darker tech background */
+    background-color: #555555;
 }
 
 body.dark-theme .github-btn {
@@ -330,4 +271,57 @@ body.dark-theme .footer,
 body.dark-theme .footer-bottom a {
     background-color: #1e1e1e;
     color: #bbbbbb;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main {
+        padding: 20px;
+    }
+
+    .image-wrapper {
+        width: 60%;
+    }
+
+    .tech-wrapper {
+        justify-content: center;
+    }
+
+    .tech-card {
+        width: 120px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .image-wrapper {
+        width: 80%;
+    }
+
+    .tech-wrapper {
+        padding: 0 15px;
+    }
+
+    .tech-card {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .challenges-solutions li {
+        padding: 15px;
+    }
 }

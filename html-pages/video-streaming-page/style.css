@@ -308,7 +308,7 @@ body, html {
     }
 
     .tech-card {
-        width: 70px;
+        width: fit-content;
     }
 
     .github-btn {

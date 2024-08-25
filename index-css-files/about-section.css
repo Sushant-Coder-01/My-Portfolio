@@ -94,6 +94,9 @@
     grid-row: 4;
     grid-column: 1;
     text-align: center;
+    border-bottom: 1px solid #787878; /* Thinner border */
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .contact-button button {
@@ -105,7 +108,6 @@
     font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s box-shadow 0.3s;
-    
 }
 
 
@@ -253,7 +255,7 @@
     padding: 10px; /* Reduced padding */
     border-bottom: 1px solid #ddd;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     gap: 10px; /* Added gap between sections */
 }
 
@@ -314,7 +316,7 @@
         margin: 50px auto;
         border-radius: 12px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        padding-top: 100px;
+        padding-top: 70px;
         gap: 0;
     }
     
@@ -509,7 +511,7 @@
     .about-me-content {
         width: 100%;
         padding: 0;
-       padding-top: 100px;
+       padding-top: 70px;
     }
 }
 
@@ -517,13 +519,33 @@
 
     .about-me-content {
         width: 100%;
-        padding-top: 100px;
+        padding-top: 70px;
         gap: 0;
+    }
+
+    .about-me h2 {
+        font-size: xxx-large;
     }
     
     .about-me p {
-        width: 70%;
+        width: 85%;
     } 
 
+    .achievement-info {
+        gap: 7px;
+    }
+
+    
+}
+
+@media (max-width: 576px) {
+
+    .education-item {
+        grid-template-rows: 1fr 1fr auto;
+    }
+
+    .education-details {
+        gap: 1px;
+    }
     
 }

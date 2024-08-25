@@ -26,9 +26,6 @@
     margin-right: 10%; /* Adds space between footer-about and footer-links */
 }
 
-.footer-links {
-    padding-left: 30px;
-}
 
 .footer-about h2, .footer-links h2, .footer-social h2 {
     font-size: 24px;
@@ -106,4 +103,25 @@
     color: white;
     text-decoration: none;
 
+}
+
+
+@media (max-width: 1200px) {
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+    
 }

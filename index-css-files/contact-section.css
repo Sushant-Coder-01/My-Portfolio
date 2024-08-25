@@ -178,7 +178,7 @@
     margin-top: 30px;
     width: 20%;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #ff8e2b;
     color: #ffffff;
     font-size: 1.1rem;
     border: none;
@@ -258,13 +258,25 @@
         
     }
 
+    .contact-info {
+        width: 80%;
+    }
+
     .contact-form {
         height: 500px;
         width: 80%;
     }
 
+    .contact-form form button {
+        padding: 10px 15px;
+    }
+
     .divider {
         margin: 10px 0;
+    }
+
+    .form-row input {
+        width: 50%;
     }
 
 }

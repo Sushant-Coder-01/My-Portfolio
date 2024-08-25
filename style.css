@@ -2,7 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Temporary fix to prevent horizontal scrolling */
 }

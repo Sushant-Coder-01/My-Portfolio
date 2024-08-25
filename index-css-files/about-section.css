@@ -505,6 +505,14 @@
 
 }
 
+@media (max-width: 992px) {
+    .about-me-content {
+        width: 100%;
+        padding: 0;
+       padding-top: 100px;
+    }
+}
+
 @media (max-width: 768px) {
 
     .about-me-content {

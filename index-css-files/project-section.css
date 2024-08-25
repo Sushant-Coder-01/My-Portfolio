@@ -134,6 +134,10 @@
     flex-direction: column;
     gap: 30px;
     width: 100%;
+    margin: 0;
+    border-radius: 0; 
+    padding: 0;
+    padding-top: 70px;
 }
 
 .projects-overview {
@@ -147,9 +151,10 @@
 
 .project-item {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
     border-radius: 10px;
+    margin: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

@@ -67,7 +67,7 @@ body, html {
 .project-details h2, .technologies-used h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #3572EF;
+    color: #444;
 }
 
 .project-details .container {
@@ -88,50 +88,17 @@ body, html {
 .divider {
     height: 3px;
     width: 100%;
-    background-color: #3572EF;
+    background-color: #444;
     border-radius: 5px;
     margin-top: 30px;
 }
 
-/* Feature Section */
-.features h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #3572EF;
-}
-
-.features .container {
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 50px;
-    margin: 20px;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-}
-
-.features ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 0;
-}
-
-.features li {
-    margin-bottom: 10px;
-    padding-left: 10px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.features li strong {
-    color: #2c3e50;
-    font-weight: bold;
-    margin-right: 5px;
-}
 
 /* Challenges and Solutions Section */
 .challenges-solutions h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #3572EF;
+    color: #444;
 }
 
 .challenges-solutions .container {
@@ -184,7 +151,7 @@ body, html {
 .tech-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #3572EF;
+    color: #444;
     margin-left: 10px;
 }
 
@@ -244,7 +211,7 @@ body, html {
 .github-btn:hover {
     background-color: #3572EF;
     transform: translateX(-20px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px #3b78f1;
 }
 
 /* Responsive Design */
@@ -312,6 +279,25 @@ body, html {
 
     .intro p {
         font-size: 0.9em;
+    }
+
+    .challenges-solutions .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .tech-wrapper {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .project-details .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .tech-wrapper {
+        justify-content: start;
     }
 
     .tech-card {

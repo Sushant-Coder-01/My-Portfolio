@@ -94,9 +94,6 @@
     grid-row: 4;
     grid-column: 1;
     text-align: center;
-    border-bottom: 1px solid #787878; /* Thinner border */
-    margin: 0;
-    padding-bottom: 30px;
 }
 
 .contact-button button {
@@ -539,6 +536,12 @@
 
     .education-item {
         grid-template-rows: 1fr 1fr auto;
+    }
+
+    .contact-button {
+        border-bottom: 1px solid #787878; /* Thinner border */
+        margin: 0;
+        padding-bottom: 30px;
     }
 
     .education-details {

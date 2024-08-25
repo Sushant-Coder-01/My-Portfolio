@@ -303,40 +303,203 @@
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
 
     .about-me-content {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
         width: 100%;
+        height: auto;
         margin: 0;
-        padding: 0;
+        border-radius: 0; 
+        padding: 0; 
+        padding-top: 100px;
+        gap: 0;
     }
-
-    .skills {
+    
+    /* about-me element */
+    
+    .about-me { 
+        grid-row: 1;
+        text-align: center;
+    }
+    
+    .about-me-para {
+        display: flex;
+        justify-content: center;
+    }
+    .about-me p {
+        font-family: sans-serif;
         width: 50%;
     }
+    
+    .about-me h2 {
+        margin-bottom: 10px;
+        font-family:  Helvetica, sans-serif;
+    }
+    
+    .about-me .div-box-1 {
+        display: flex;
+        justify-content: center;
+    }
+    .about-me .div-box-2 {
+        background-color: #eb9710;
+        height: 5px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    
+    
+    /* Get to know me! */
+    
+    .objective {
+        grid-row: 2 ;
+        padding: 20px;
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width:  100%;
+        line-height: 1.6;
+    }
+    
+    /* contact button */
+    
+    
+    .contact-button {
+        grid-row: 3;
+        text-align: center;
+        margin: 10px;
+        margin-top: 0;
+    }
+    
+    
+    /* skills session */
+    
+    .skills {
+        grid-row: 4;
+        grid-column: 1;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 30px;
+        border-radius: 10px;
+    }
 
+    .skills h2 {
+        border-bottom: 1px solid #ccc; /* Thinner border */
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    
     .skill-set {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
-
+    
+    /* Achievement session */
+    
     .achievements {
-
-        width: 50%;
+        grid-row: 5;
+        grid-column: 1;
+        font-family: sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px; 
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-    .achievement-info {
-        flex-direction: column;
-        width: 40%;
-    }
 
+    .achievements h2 {
+        border-bottom: 1px solid #ccc; /* Thinner border */
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    
+    .achievement-item {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+    
+    
+    /* education */
+    
     .education {
-        width: 50%;
+        grid-row: 6;
+        grid-column: 1 ;
+        padding: 15px;
+        margin: 30px;
     }
+    
+    .education h2 {
+        font-size: 22px; /* Slightly reduced font size */
+        color: #333;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc; /* Thinner border */
+        margin: 0;
+        padding-bottom: 10px; /* Added padding to separate from content */
+    }
+    
+    .education ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .education-item {
+        padding: 10px; /* Reduced padding */
+        border-bottom: 1px solid #ddd;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px; /* Added gap between sections */
+    }
+    
+    .education-item:last-child {
+        border-bottom: none;
+    }
+    
+    .education h3 {
+        font-size: 18px; /* Slightly reduced font size */
+        color: #007bff;
+        margin: 0;
+        font-weight: 600;
+    }
+    
     .education-details {
-        flex-direction: column;
-
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
     }
-
-
+    
+    .left-details p,
+    .right-details p {
+        margin: 3px 0; /* Reduced margin */
+        font-size: 16px; /* Reduced font size */
+        color: #555;
+    }
+    
+    .right-details {
+        text-align: left;
+    }
+    
+    .cgpa {
+        background-color: #FFBF78;
+        padding: 8px; /* Reduced padding */
+        border-radius: 5px;
+        text-align: left;
+        max-width: 180px; /* Adjusted width */
+    }
+    
+    .cgpa p {
+        margin: 0;
+        font-size: 14px; /* Reduced font size */
+        color: #333;
+        font-weight: 600;
+    }
 
 }

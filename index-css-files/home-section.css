@@ -22,7 +22,8 @@
 
 .sidebar {
     background-color: #CAB8A2;
-    padding: 0.5em;
+    padding: 10px;
+    margin-left: 10px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -455,6 +456,8 @@ h3 {
 }
 
 @media (max-width: 576px) {
+
+
 
     .main-content {
         display: grid;

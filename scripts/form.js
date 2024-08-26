@@ -26,8 +26,32 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
+            // send the data to server.
+            const response = await fetch('/server-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // check if a request was succesful
+            if(!Response.ok){
+                throw new Error('Network response was not ok');
+            }
+
+            // Parse and handle the server response
+            const result = await response.json();
+
+            console.log('Server response:', result);
+
+            alert('Yout message has been sent successfully!');
             
         } catch (error) {
+
+            console.log('There was a problem with fetch operation:', error);
+
+            alert('There was an error while sending  your message. Please try again later.');
             
         }
 

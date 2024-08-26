@@ -2,9 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "a backend for portfolio website",
-  "main": "server.js",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js "
   },
   "author": "Sushant",
   "license": "ISC",
@@ -15,5 +16,8 @@
     "express-validator": "^7.2.0",
     "helmet": "^7.1.0",
     "mongoose": "^8.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }

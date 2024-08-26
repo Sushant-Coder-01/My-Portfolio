@@ -1,7 +1,7 @@
 import sanitizeHTML from "sanitize-html";
 
 
-(input) => {
+const sanitize = (input) => {
     return sanitizeHTML(input, {
         allowedTags: ['b', 'i', 'em', 'strong', 'a'],
         allowedAttributes: {
@@ -15,4 +15,4 @@ import sanitizeHTML from "sanitize-html";
     });
 };
 
-export { sanitizeHTML} ;
+export { sanitize } ;

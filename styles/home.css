@@ -47,8 +47,9 @@
 .sidebar img:hover {
     transform: scale(1.15);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    background-color: #ec8a27;
+    background-color: rgb(209, 233, 246);
 }
+
 
 /* Main Content */
 .intro-container {
@@ -561,8 +562,8 @@ h3 {
 
     .project-button {    
         margin: 10px;
-        padding: 6px 12px;
-        font-size: 14px; /* Slightly increase font size */
+        padding: 5px 10px;
+        font-size: 12px; /* Slightly increase font size */
         width: 50%; /* Use a percentage for button width */
         max-width: 200px; /* Set a max width */
     }

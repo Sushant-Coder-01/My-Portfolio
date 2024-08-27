@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
 
-        // console.log('First Name', firstName);
-        // console.log('Last Name', lastName);
-        // console.log('Email:', email);
-        // console.log('Message:', message);
+        console.log('First Name', firstName);
+        console.log('Last Name', lastName);
+        console.log('Email:', email);
+        console.log('Message:', message);
 
         const formData = {
             firstName,
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // send the data to server.
-            const response = await fetch('/server-endpoint', {
+            const response = await fetch('http://localhost:3000/api/contact/submit', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // check if a request was succesful
-            if(!Response.ok){
+            if(!response.ok){
                 throw new Error('Network response was not ok');
             }
 

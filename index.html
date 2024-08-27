@@ -234,13 +234,13 @@
         </div>
         <div class="contact-form">
             <h3>Feel free to drop us a line below!</h3>
-            <form>
-                <div class="form-row" id="contact-form">
-                    <input type="text" id="firstName" placeholder="First name" required>
-                    <input type="text" id="lastName" placeholder="Last name" required>
+            <form id="contact-form">
+                <div class="form-row">
+                    <input type="text" id="firstName" placeholder="First name" required autocomplete="given-name">
+                    <input type="text" id="lastName" placeholder="Last name" required autocomplete="family-name">
                 </div>
-                <input type="email" id="email" placeholder="Your email" required>
-                <textarea id="message" placeholder="Type your message here..." required></textarea>
+                <input type="email" id="email" placeholder="Your email" required autocomplete="email">
+                <textarea id="message" placeholder="Type your message here..." required autocomplete="off"></textarea>
                 <button type="submit">SEND</button>
             </form>
         </div>

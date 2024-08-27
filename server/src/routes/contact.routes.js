@@ -5,14 +5,14 @@ import { validate } from "../middleware/validation.middleware.js";
 
 const router = Router();
 
-router.route('/submit').post(
+router.route("/submit").post(               
     [
         check('firstName').trim().notEmpty().withMessage("First name is required"),
         check('lastName').trim().notEmpty().withMessage("Last name is required"),
-        check('email').trim().isEmpty().withMessage("Email is required"),
-        check('maessage').trim().notEmpty().withMessage("Message is required"),
-        validate
+        check('email').trim().isEmail().withMessage("Email is required"),
+        check('message').trim().notEmpty().withMessage("Message is required"),
     ],
+    validate,
     submitContactForm
 );
 

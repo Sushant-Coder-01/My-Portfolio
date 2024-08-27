@@ -531,23 +531,22 @@ h3 {
         grid-column: 1 / 3;
         padding: 20px;
         margin: 0;
-        margin-bottom: 20px;
         justify-content: start;
         align-items: center;
     }
 
     h1 {
-        font-size: 2em; /* Reduced from 3em */
+        font-size: 2.5em; /* Reduced from 3em */
         margin-bottom: 10px; /* Adjust margin to fit better on small screens */
     }
 
     h2 {
-        font-size: 1.5em; /* Reduced from 2em */
+        font-size: 2em; /* Reduced from 2em */
         margin-top: 10px; /* Adjusted margin */
     }
 
     h3 {
-        font-size: 1.2em; /* Reduced from 1.5em */
+        font-size: 1.5em; /* Reduced from 1.5em */
         margin-bottom: 5px; /* Adjusted margin */
     }
 

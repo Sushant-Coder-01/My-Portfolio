@@ -47,7 +47,7 @@
 .sidebar img:hover {
     transform: scale(1.15);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    background-color: #E0A458;
+    background-color: #ec8a27;
 }
 
 /* Main Content */
@@ -95,7 +95,7 @@ h3 {
 }
 
 .project-button > button {
-    background-color: #C99002;
+    background-color: #e97500;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -192,7 +192,6 @@ h3 {
     }
     
     .sidebar {
-        background-color: #CAB8A2;
         padding: 0.5em;
         border-radius: 5px;
         display: flex;
@@ -317,7 +316,6 @@ h3 {
     }
     
     .sidebar {
-        background-color: #CAB8A2;
         padding: 0.5em;
         border-radius: 5px;
         display: flex;
@@ -366,7 +364,6 @@ h3 {
         width: 50%;
         margin-top: 1em;
         margin-left: 0.5em;
-        background-color: #CAB8A2;
         border-radius: 5px; /* Rounded corners on bottom */
         justify-content: center;
         align-items: center; /* Center items vertically */
@@ -460,7 +457,7 @@ h3 {
     .scroll-down-sign img {
         height: 20em;
         width: 20em;
-        margin-bottom: 4em;
+        margin-bottom: 5em;
     }
 
 }
@@ -491,7 +488,6 @@ h3 {
         width: 50%;
         margin-top: 10px;
         margin-left: 10px;
-        background-color: #CAB8A2;
         border-radius: 5px; /* Rounded corners on bottom */
         justify-content: center;
         align-items: center; /* Center items vertically */
@@ -565,14 +561,29 @@ h3 {
 
     .project-button {    
         margin: 10px;
-        padding: 8px 15px;
+        padding: 6px 12px;
         font-size: 14px; /* Slightly increase font size */
         width: 50%; /* Use a percentage for button width */
         max-width: 200px; /* Set a max width */
     }
 
+    .scroll-down-container {
+        grid-row: 5;
+        grid-column: 1 / 2;
+    }
 
-    /* .scroll-down-sign img, .scroll-down-sign, .scroll-down-container {
-        display: none;
-    } */
+    .scroll-down-sign {
+        height: 2em;
+        font-size: 2px;
+        transform: translateX(-50%);
+        animation: bounce 2s infinite;
+        margin-bottom: 20em;
+    }
+
+    .scroll-down-sign img {
+        height: 20em;
+        width: 20em;
+        margin-bottom: 5em;
+    }
+   
 }

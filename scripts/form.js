@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // send the data to server.
-            const response = await fetch('http://localhost:3000/api/contact/submit', {
+            const response = await fetch('https://my-portfolio-n2h.vercel.app/', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

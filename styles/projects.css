@@ -204,8 +204,8 @@
     
     
     .project-image {
-        width: 50%;
-        height: 100%; /* Adjust the max-width for a better fit */
+        width: 300px;
+        height: 200px; /* Adjust the max-width for a better fit */
         border-radius: 8px;
         margin-bottom: 1px;
         object-fit: cover;

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix-Gemini</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../../styles/navigation.css" />
+    <link rel="stylesheet" href="../../styles/footer.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <nav>
+        <div class="nav-content">
+          <a href="../../index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#tackled-challenges">Challenges</a>
+          <a href="#tech">Tech</a>
+        </div>
+        <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <section class="intro">
+        <div class="container">
+          <h1>Netflix-Gemini</h1>
+          <p>
+            Stream, discover, and enjoy personalized content with
+            Netflix-Gemini.
+          </p>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div class="video-wrapper">
+          <img  src="../../assets/videos/Screenshot 2024-11-11 205852.png" alt="image"/>
+        </div>
+      </section>
+
+      <section id="project-link" class="github-link">
+        <div class="container">
+          <a href="https://netflix-gpt-rosy-gamma.vercel.app" class="github-btn"
+            >Live Link</a
+          >
+        </div>
+        <div class="container">
+          <a
+            href="https://github.com/Sushant-Coder-01/netflix-gemini"
+            class="github-btn"
+            >GitHub Link</a
+          >
+        </div>
+      </section>
+
+      <section id="about" class="project-details">
+        <h2>About the Project</h2>
+        <div class="container">
+          <p>
+            Netflix-Gemini offers users an intuitive interface to stream,
+            discover, and manage personalized content. It features user
+            authentication, tailored recommendations, and a responsive design
+            for an enhanced viewing experience.
+          </p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="container">
+          <ul>
+            <li>
+              <strong>Movie Search with Gemini:</strong> Integrated Gemini for advanced movie search functionality, enabling users to easily find movies based on specific genres, ratings, and descriptions with AI-powered suggestions.
+            </li>
+            <li>
+              <strong>Why You Should Watch:</strong> Leveraged Gemini to generate personalized "Why You Should Watch" suggestions with five key points, providing users with insightful recommendations based on movie details, audience ratings, and trends.
+            </li>
+            <li>
+              <strong>Responsive UI with Tailwind:</strong> Created a fully responsive and modern user interface using Tailwind CSS, ensuring a seamless experience across all devices including desktop, tablet, and mobile.
+            </li>
+            <li>
+              <strong>Firebase Authentication:</strong> Integrated Firebase for secure user authentication, allowing easy registration, login, and account management with email/password or Google sign-in options.
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+
+      <div class="divider"></div>
+
+      <section id="tackled-challenges" class="challenges-solutions">
+        <h2>Tackled Challenges</h2>
+        <div class="container">
+          <ul>
+            <li>
+              <div class="challenge">Challenge:</div>
+              <p class="challenge-desc">
+                Implementing secure routing to ensure that users are logged in before accessing restricted routes.
+              </p>
+              <div class="solution">Solution:</div>
+              <p class="solution-desc">
+                Applied safe routing techniques, using Firebase authentication to block access to certain routes until the user is logged in, ensuring secure and smooth navigation.
+              </p>
+            </li>
+            <li>
+              <div class="challenge">Challenge:</div>
+              <p class="challenge-desc">
+                Fetching valid movie suggestions using Gemini's AI-powered recommendations.
+              </p>
+              <div class="solution">Solution:</div>
+              <p class="solution-desc">
+                Integrated Gemini to fetch valid movie suggestions based on user preferences, genres, and viewing history, ensuring personalized recommendations.
+              </p>
+            </li>
+            <li>
+              <div class="challenge">Challenge:</div>
+              <p class="challenge-desc">
+                Displaying similar movies based on the genre of the currently playing movie.
+              </p>
+              <div class="solution">Solution:</div>
+              <p class="solution-desc">
+                Developed a recommendation engine using Gemini to suggest similar movies based on genre, allowing users to explore related content effortlessly.
+              </p>
+            </li>
+            <li>
+              <div class="challenge">Challenge:</div>
+              <p class="challenge-desc">
+                Managing application state and synchronizing data across the platform.
+              </p>
+              <div class="solution">Solution:</div>
+              <p class="solution-desc">
+                Implemented a centralized state management system using Redux to efficiently manage and persist user data, movie preferences, and watch history across the app.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <div class="divider"></div>
+
+      <section id="tech" class="tech-section">
+        <h2>Technologies Used</h2>
+        <div class="tech-wrapper">
+          <div class="tech-card">
+            <div class="tech-name">JavaScript</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">React</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Redux Tool-kit</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Tailwind</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Firebase</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">React Router DOM</div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="project-link" class="github-link">
+        <div class="container">
+          <a href="https://netflix-gpt-rosy-gamma.vercel.app" class="github-btn"
+            >Live Link</a
+          >
+        </div>
+        <div class="container">
+          <a
+            href="https://github.com/Sushant-Coder-01/netflix-gemini"
+            class="github-btn"
+            >GitHub Link</a
+          >
+        </div>
+      </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2>Sushant Mangore</h2>
+          <p>
+            A <strong>Full Stack Developer</strong> with expertise in both
+            frontend and backend development, crafting user-friendly websites
+            and web applications that contribute to the success of the overall
+            product.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tackled-challenges">Challenges</a></li>
+            <li><a href="#tech">Tech</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sushant-mangore"
+              ><img src="../../assets/logos/linkedin.svg" alt="LinkedIn logo"
+            /></a>
+            <a href="https://github.com/Sushant-Coder-01"
+              ><img src="../../assets/logos/github.svg" alt="Github logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024. Made by
+          <a href="https://sushant-coder-01.github.io/My-Portfolio/"
+            >Sushant Mangore</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../../scripts/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match-Me Dating App</title>
+    <link rel="icon" href="../../assets/logos/matchme_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../styles/navigation.css" />
+    <link rel="stylesheet" href="../../styles/footer.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <nav>
+        <div class="nav-content">
+          <a href="../../index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#tackled-challenges">Challenges</a>
+          <a href="#tech">Tech</a>
+        </div>
+        <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <section class="intro">
+        <div class="container">
+          <h1>MatchMe Dating App</h1>
+          <p>
+            Connect, chat, and discover meaningful relationships with MatchMe.
+          </p>
+        </div>
+      </section>
+
+      <section class="image-section">
+        <div class="image-wrapper">
+            <iframe width="900" height="500" src="https://www.youtube.com/embed/eL1AvjYiQm8?si=EWbZHmkTyb2dlLsv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="project-link" class="github-link">
+        <div class="container">
+          <a href="https://match-me-inky.vercel.app" class="github-btn"
+            >Live Link</a
+          >
+        </div>
+        <div class="container">
+          <a
+            href="https://github.com/Sushant-Coder-01/Match-Me"
+            class="github-btn"
+            >GitHub Link</a
+          >
+        </div>
+      </section>
+
+      <section id="about" class="project-details">
+        <h2>About the Project</h2>
+        <div class="container">
+          <p>
+            An AI-powered dating application that facilitates meaningful connections by enhancing user profiles with personalized descriptions and streamlining interactions through real-time chat, connection requests, and photo sharing, delivering an engaging and modern dating experience.
+          </p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="container">
+          <ul>
+            <li>
+              <strong>AI-Powered Profiles with Gemini:</strong> Integrated Gemini to create personalized profile descriptions, enhancing user discovery and engagement with AI-driven insights.
+            </li>
+            <li>
+              <strong>Real-Time Chat:</strong> Enabled seamless messaging with WebSocket and Pusher, providing instant notifications and smooth communication between users.
+            </li>
+            <li>
+              <strong>Connection Requests:</strong> Added functionality to send, accept, or reject connection requests, making it easy to form meaningful connections.
+            </li>
+            <li>
+              <strong>Photo Sharing:</strong> Included secure photo sharing, allowing users to upload, view, and share photos within the app.
+            </li>
+            <li>
+              <strong>Responsive UI with Tailwind:</strong> Built a modern, fully responsive interface with Tailwind CSS, ensuring a consistent experience across all devices.
+            </li>
+            <li>
+              <strong>Secure Authentication:</strong> Implemented NextAuth for secure user authentication, supporting email/password and Google sign-in options.
+            </li>
+            <li>
+              <strong>Scalable Database with Prisma:</strong> Designed and optimized database schemas using Prisma and PostgreSQL for efficient data storage and retrieval.
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      
+
+      <div class="divider"></div>
+
+      <section id="tackled-challenges" class="challenges-solutions">
+        <h2>Tackled Challenges</h2>
+        <div class="container">
+            <ul>
+              <li>
+                <div class="challenge">Challenge:</div>
+                <p class="challenge-desc">
+                  Ensuring secure access to user profiles and chat features.
+                </p>
+                <div class="solution">Solution:</div>
+                <p class="solution-desc">
+                  Implemented protected routes using NextAuth to restrict access to sensitive features like chat and profile editing, ensuring only authenticated users can proceed.
+                </p>
+              </li>
+              <li>
+                <div class="challenge">Challenge:</div>
+                <p class="challenge-desc">
+                  Generating personalized profile descriptions for better user engagement.
+                </p>
+                <div class="solution">Solution:</div>
+                <p class="solution-desc">
+                  Integrated Gemini to generate AI-powered, dynamic profile descriptions based on user inputs, creating engaging and appealing profiles.
+                </p>
+              </li>
+              <li>
+                <div class="challenge">Challenge:</div>
+                <p class="challenge-desc">
+                  Real-time messaging and notifications for seamless user interactions.
+                </p>
+                <div class="solution">Solution:</div>
+                <p class="solution-desc">
+                  Utilized WebSocket and Pusher to enable real-time chat and instant notifications, providing a smooth and responsive communication experience.
+                </p>
+              </li>
+              <li>
+                <div class="challenge">Challenge:</div>
+                <p class="challenge-desc">
+                  Managing connection requests and tracking their statuses efficiently.
+                </p>
+                <div class="solution">Solution:</div>
+                <p class="solution-desc">
+                  Developed a robust system to handle sending, accepting, and rejecting connection requests, ensuring proper status updates and smooth user interactions.
+                </p>
+              </li>
+              <li>
+                <div class="challenge">Challenge:</div>
+                <p class="challenge-desc">
+                  Synchronizing user data across devices and ensuring consistency.
+                </p>
+                <div class="solution">Solution:</div>
+                <p class="solution-desc">
+                  Centralized state management using Zustand to handle and synchronize user data, ensuring a consistent experience across devices.
+                </p>
+              </li>
+            </ul>
+          </div>
+          
+      </section>
+      
+      <div class="divider"></div>
+
+      <section id="tech" class="tech-section">
+        <h2>Technologies Used</h2>
+        <div class="tech-wrapper">
+          <div class="tech-card">
+            <div class="tech-name">NextJS</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">React.js</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">TypeScript</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Tailwind CSS</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Zustand</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">PostgreSQL</div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-name">Prisma</div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="project-link" class="github-link">
+        <div class="container">
+          <a href="https://match-me-inky.vercel.app" class="github-btn"
+            >Live Link</a
+          >
+        </div>
+        <div class="container">
+          <a
+            href="https://github.com/Sushant-Coder-01/Match-Me"
+            class="github-btn"
+            >GitHub Link</a
+          >
+        </div>
+      </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2>Sushant Mangore</h2>
+          <p>
+            A <strong>Full Stack Developer</strong> with expertise in both
+            frontend and backend development, crafting user-friendly websites
+            and web applications that contribute to the success of the overall
+            product.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tackled-challenges">Challenges</a></li>
+            <li><a href="#tech">Tech</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sushant-mangore"
+              ><img src="../../assets/logos/linkedin.svg" alt="LinkedIn logo"
+            /></a>
+            <a href="https://github.com/Sushant-Coder-01"
+              ><img src="../../assets/logos/github.svg" alt="Github logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024. Made by
+          <a href="https://sushant-coder-01.github.io/My-Portfolio/"
+            >Sushant Mangore</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../../scripts/navbar.js"></script>
+  </body>
+</html>

@@ -311,13 +311,13 @@ html {
   }
 
   .image-wrapper {
-    width: 100%;
-    height: auto;
-  }
+    width: 20em;
+    height: 15em;
+  } 
 
   .image-wrapper .iframe {
-    width: 100%;
-    height: auto;
+    width: 20em;
+    height: 15em;
   }
 
   .features .container {

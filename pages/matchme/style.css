@@ -55,7 +55,7 @@ html {
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-.image-wrapper img {
+.image-wrapper iframe {
   width: 900px;
   height: 500px;
   border-radius: 5px;
@@ -315,7 +315,7 @@ html {
     height: auto;
   }
 
-  .image-wrapper img {
+  .image-wrapper .iframe {
     width: 100%;
     height: auto;
   }
